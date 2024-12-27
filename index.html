@@ -156,8 +156,9 @@
                                         <small>Hello</small><br>
                                         Sign in </a>
                                     <ul class="dropdown-menu small-screen-cls" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item sign-in-user signin-445"><a id="open-modal" class="nav-link"
-                                                href="#">Sign In</a></li>
+                                        <li class="nav-item sign-in-user signin-445">
+                                            <a id="open-modal" class="nav-link" href="#">Sign In</a>
+                                        </li>
                                         <li class="signin-arah6898">
                                             <p class="sign-in-tws78">Experience joy and companionship with our amazing
                                                 bully dogs.</p>
@@ -2848,6 +2849,119 @@
     
 </section>
 
+
+
+<!-- login & register popup	 -->
+<section class="ruk-register-form">
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+			
+			<!-- Modal Popup for Register Form -->
+            <div class="container" id="signup-container" style="display: none;">
+                <div class="logo">
+                    <img src="https://thebullysupply.com/wp-content/uploads/2024/11/image-43.png" alt="The Bally Supply Logo">
+                </div>
+                <h2>Sign Up</h2>
+                <p class="description">Ready to become part of the exclusive club? Fill in the details below, and let the journey begin!</p>
+				
+				<span class="error-msg register-error-msg"></span>
+				<span class="success-msg register-success-msg"></span>
+                
+         
+				<form name="signup" class="register-form" method="POST" enctype="multipart/form-data">
+					<div class="form-group">
+						<input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
+						<span class="formError" id="fullnameError"></span>
+					</div>
+					<div class="form-group">
+						<input type="email" id="email" name="email" placeholder="Email Address" required>
+						<span class="formError" id="emailError"></span>
+					</div>
+					<div class="form-group">
+						<input type="password" id="password" name="password" placeholder="Password" required>
+						<span class="formError" id="passwordError"></span>
+						<span class="toggle-password" onclick="togglePassword('password')">
+							<i class="fa fa-eye-slash" aria-hidden="true"></i>
+						</span>						
+					</div>
+					<div class="form-group">
+						<input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm Password" required>
+						<span class="formError" id="confirmPasswordError"></span>
+						<span class="toggle-password" onclick="togglePassword('confirm-password')">
+							<i class="fa fa-eye-slash" aria-hidden="true"></i>
+						</span>						
+					</div>
+					<button type="submit" name="signup" class="btn" id="signup-btn">
+						<span>Sign Up</span>
+						<span class="spinner" style="display: none;"></span>
+					</button>
+				</form>
+
+
+<!--                 <div class="or-divider">or</div>
+
+                <div class="social-buttons">
+                    <button class="social-btn google"><img src="/wp-content/uploads/2024/10/google-icon-1.png" alt="google"/></button>
+                    <button class="social-btn facebook"><img src="/wp-content/uploads/2024/10/facebook-icon-1.png" alt="facebook"/></button>
+                    <button class="social-btn apple"><img src="/wp-content/uploads/2024/10/app-icon-1.png" alt="apple"/></button>
+                </div>
+ -->
+                <p class="footer-text">
+                    Already have an account? <a href="#" id="show-login">Sign in</a>
+                </p>
+            </div>
+			
+			
+			<div class="container" id="login-container">
+				<div class="logo">
+					<img src="https://thebullysupply.com/wp-content/uploads/2024/11/image-43.png" alt="The Bally Supply Logo">
+				</div>
+				<h2>Sign In</h2>
+				<p class="description">Ready to become part of the exclusive club? Fill in the details below, and let the journey begin!</p>
+
+				<span class="error-msg login-error-msg" style="color: red;"></span>
+				<span class="success-msg login-success-msg" style="color: green;"></span>
+
+				<form name="login" method="post" action="" class="formValidationQuery login-form">
+					<input type="hidden" id="toPostnAdd" name="toPostnAdd" value="" />
+					<div class="form-group">
+						<input type="email" id="youremail" name="youremail" placeholder="Email Address" value="" required />
+						<span class="formError" id="youremailError"></span>
+					</div>
+					<div class="form-group">
+						<input type="password" id="loginPassword" name="password" placeholder="Password" value="" required />
+						<span class="toggle-password" onclick="togglePassword('loginPassword')">
+							<i class="fa fa-eye-slash" aria-hidden="true"></i>
+						</span>
+						<span class="formError" id="loginPasswordError"></span>
+					</div>
+					<button type="submit" name="login" class="btn" id="login-btn">
+						<span>Sign In</span>
+						<span class="spinner" style="display: none;"></span>
+					</button>
+				</form>
+
+<!-- 				<div class="or-divider">or</div>
+
+				<div class="social-buttons">
+					<button class="social-btn google"><img src="/wp-content/uploads/2024/10/google-icon-1.png" alt="google"/></button>
+					<button class="social-btn facebook"><img src="/wp-content/uploads/2024/10/facebook-icon-1.png" alt="facebook"/></button>
+					<button class="social-btn apple"><img src="/wp-content/uploads/2024/10/app-icon-1.png" alt="apple"/></button>
+				</div> -->
+
+				<p class="footer-text">
+					Don't have an account? <a href="#" id="show-signup">Register</a>
+				</p>
+			</div>
+
+        </div>
+    </div>
+</section>
+<!-- login & register popup	 -->
+
+
+
 <footer class="footer">
 	<div class="container-footer">
     <div class="footer-links">
@@ -2915,477 +3029,90 @@
     </div>
 </footer>
 
+
+
+
+<script>
+
+// const openModal = document.getElementById("open-modal");
+
+// if (openModal) {
+//     openModal.addEventListener("click", function (e) {
+//         alert('OK');
+//     });
+// } else {
+//     console.error("Element with id 'open-modal' not found.");
+// }
+
+
+    // const openModal = document.getElementById("openModal");
+    // openModal.addEventListener("click", function (e) {
+    //     alert('OK');    
+    //     // if (modal && e.target === modal) {
+    //         //     modal.style.display = "none";
+    //         // }
+    //     });
+    
+    // document.addEventListener("DOMContentLoaded", function () {
+    // 		console.log('test1');
+    //     const modal = document.getElementById("register-modal");
+    // 		console.log(modal);
+    //     const openModal = document.getElementById("open-modal");
+    //     const sellModal = document.getElementById("sell-modal");
+    //     const sellModal2 = document.getElementById("sell-modal2");
+    //     const closeModal = document.querySelector(".close");
+    
+    
+    //     // Add event listeners if elements exist
+    //     if (openModal) openModal.addEventListener("click", showModal);
+    //     if (sellModal) sellModal.addEventListener("click", showModal);
+    //     if (sellModal2) sellModal2.addEventListener("click", showModal);
+    
+    //         // Function to show modal
+    //         const showModal = (e) => {    
+    //         e.preventDefault();
+    //         if (modal) {
+    //             console.log("Opening modal");
+    //             modal.style.display = "flex"; // Show modal as flex
+    //         }
+    //     };
+    
+    //     // Close modal when 'x' is clicked
+    //     if (closeModal) {
+    //         closeModal.addEventListener("click", function () {
+    //             if (modal) modal.style.display = "none";
+    //         });
+    //     }
+    
+    //     // Close modal if clicking outside the modal content
+    //     window.addEventListener("click", function (e) {
+    //         if (modal && e.target === modal) {
+    //             modal.style.display = "none";
+    //         }
+    //     });
+    
+    
+    // });
+    
+    
+    
+    </script>
+
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script> -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
-	
+
 <script>
 
-
-
-$(document).ready(function(){	
-        $('.ruk-dog-card-row').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            arrows: true,
-			nextArrow: '<i class="fa fa-angle-right"></i>',
-		    prevArrow: '<i class="fa fa-angle-left"></i>',
-			dots: false,
-			 responsive: [                
-				{
-                    breakpoint: 1124,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-	
-	   $('.shop-banner-listing').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-			dots: false,
-			 responsive: [                
-				{
-                    breakpoint: 1124,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },				 
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });	
-	
-		$('.bully-home-top-banner').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
-            arrows: false,
-			dots: true,			
-		});
-	
-    });	
-	
-	   $('.list-blog-post').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            arrows: false,
-			dots: false,
-			 responsive: [                
-				{
-                    breakpoint: 1124,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },				 
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });	
-	
-
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
-// Attach click event to the cta-label label
-  const ctaLabel = document.querySelector('.cta-label');
-  ctaLabel.addEventListener("click", function () {
-//   alert('OK');
-    const ctaGroup = document.querySelector('.cta-195');
-    ctaGroup.classList.toggle('open');
- });
-
-
-// Attach click event to the location label
-  const locationLabel = document.querySelector('.location-label');
-  locationLabel.addEventListener("click", function () {
-  //alert('OK');
-    const locationGroup = document.querySelector('.location-filter');
-    locationGroup.classList.toggle('open');
- });
-
-
-  // Attach click event to the gender label
-  const genderLabel = document.getElementById("genderLabel");
-  genderLabel.addEventListener("click", function () {
-  //alert('OK');
-    const genderGroup = document.querySelector('.gender-group');
-    genderGroup.classList.toggle('open');
- });
-  
-  // Attach click event to the price label
-  const priceLabel = document.querySelector('.price');
-  priceLabel.addEventListener("click", function () {
-  //alert('OK');
-    const priceGroup = document.querySelector('.filter-price');
-    priceGroup.classList.toggle('down');
- });
-  
-// Attach click event to the age label
-  const ageLabel = document.querySelector('.age');
-  ageLabel.addEventListener("click", function () {
-  //alert('OK');
-    const ageGroup = document.querySelector('.filter-age');
-    ageGroup.classList.toggle('down');
- });
- 
- 
-});    
-	
-	        $('.back-link').on('click', function() {
-            // 	console.log('test');
-            var subSubMenu = this.closest('.sub-sub-menu');
-            if (subSubMenu) {
-                subSubMenu.style.display = 'none';
-            }
-        });
-
-        $('.sub-back-link').on('click', function() {
-            var SubMenu = this.closest('.sub-menu');
-            if (SubMenu) {
-                SubMenu.style.display = 'none';
-            }
-            // Hide alert when modal is closed
-        });
-	
-	
-document.addEventListener("DOMContentLoaded", function () {
-    const loginForm = document.querySelector(".login-form");
-    const loginBtn = document.getElementById("login-btn");
-    const spinner = loginBtn.querySelector(".spinner");
-    const errorMsg = document.querySelector(".login-error-msg");
-    const successMsg = document.querySelector(".login-success-msg");
-    const ajaxUrl = "<?php echo admin_url('admin-ajax.php'); ?>";
-
-    loginForm.addEventListener("submit", function (e) {
-        e.preventDefault();
-		
-	    loginBtn.disabled = true;
-    	spinner.style.display = "inline-block";
-
-        const formData = new FormData(loginForm);
-        formData.append("action", "user_login");
-
-        // Clear messages
-        errorMsg.textContent = "";
-        successMsg.textContent = "";
-
-        // Show loading spinner
-        spinner.style.display = "inline-block";
-
-        fetch(ajaxUrl, {
-            method: "POST",
-            body: formData,
-        })
-            .then((response) => response.json())
-            .then((result) => {
-                spinner.style.display = "none";
-			
-				console.log('result', result);
-
-                if (result.success) {
-                    successMsg.textContent = "Login successful!...";
-                    setTimeout(() => {
-                        window.location.href = result.data.redirect;
-                    }, 1500);
-                } else {
-                    errorMsg.textContent = result.data.message;
-                }
-			
-				 // Re-enable the button
-				loginBtn.disabled = false;
-            })
-            .catch((error) => {
-                spinner.style.display = "none";
-                errorMsg.textContent = "An error occurred. Please try again.";
-                console.error("Login error:", error);
-				loginBtn.disabled = false;
-            });
-    });
-});
-	
-	jQuery(document).ready(function($) {
-//     setTimeout(function() {
-//         $('.state1').select2({
-//             placeholder: 'Locations',
-//             allowClear: true
-//         });
-//     }, 100);
-
-    const urlParams = new URLSearchParams(window.location.search);
-    const search = urlParams.get('search');
-    const state = urlParams.get('state');
-
-    if (urlParams && search && state) {
-        fetchSuggestions(search, state);
-    }
-
-    let previousSuggestions = [];
-    let debounceTimer = null;
-    const cache = new Map(); // Cache to store previous search results
-
-    // Trigger search suggestions on input with debounce
-    $('#search-input').on('input', function() {
-// 		console.log('test');
-        const search = $(this).val().trim();
-        const state = $('#state li.selected').data('value');
-
-        if (search.length > 0) {
-            if (cache.has(search)) {
-                // Use cached results if available
-                showSuggestions(cache.get(search));
-            } else {
-                showLoadingIndicator();
-
-                clearTimeout(debounceTimer);
-                debounceTimer = setTimeout(() => {
-                    fetchSuggestions(search, state);
-                }, 300); // Adjust debounce time as needed
-            }
-        } else {
-            hideSuggestions();
-        }
-    });
-
-    $('#search-input').on('click', function() {
-        if (previousSuggestions.length > 0) {
-            showSuggestions(previousSuggestions);
-        }
-    });
-
-    function fetchSuggestions(search, state) {
-        $.ajax({
-            url: ajax_object.ajax_url,
-            method: 'POST',
-            data: {
-                action: 'search_products',
-                search: search,
-                state: state,
-                nonce: ajax_object.nonce
-            },
-            success: function(response) {
-                hideLoadingIndicator();
-                if (response.success) {
-                    const results = response.data;
-                    previousSuggestions = results;
-                    cache.set(search, results); // Cache the results
-                    showSuggestions(results);
-                } else {
-                    hideSuggestions();
-                }
-            },
-            error: function() {
-                hideLoadingIndicator();
-                hideSuggestions();
-            }
-        });
-    }
-
-    function showLoadingIndicator() {
-        $('.loading').show();
-    }
-
-    function hideLoadingIndicator() {
-        $('.loading').hide();
-    }
-
-    function showSuggestions(products) {
-        const suggestionsDropdown = $('#suggestions-dropdown');
-        suggestionsDropdown.empty();
-
-        products.forEach(product => {
-            const item = $('<div class="suggestion-item"></div>').text(product.title);
-            item.on('click', function() {
-                $('#search-input').val(product.title);
-                suggestionsDropdown.hide();
-            });
-
-            suggestionsDropdown.append(item);
-        });
-
-        suggestionsDropdown.show();
-    }
-
-    function hideSuggestions() {
-        $('#suggestions-dropdown').hide().empty();
-    }
-
-    $(document).on('click', function(event) {
-        if (!$(event.target).closest('#search-input, #suggestions-dropdown').length) {
-            hideSuggestions();
-        }
-    });
-
-    $('#search-input, #suggestions-dropdown').on('click', function(event) {
-        event.stopPropagation();
-    });
-
-    $('.search-button').on('click', function() {
-        const state = $('#state li.selected').data('value');
-        const s = $('#search-input').val();
-        const search = encodeURIComponent(s);
-        const stateParam = state ? `&state=${state}` : '';
-
-        window.location.href = `/category?search=${search}${stateParam}`;
-    });
-
-    $('.category-item > a').on('click', function(event) {
-        event.preventDefault();
-        $('.category-item > a p').hide();
-        $(this).find('p').show();
-    });
-});
-
-		
-// navigation bar stiky
-$(window).scroll(function(){	       
-	if($(this).scrollTop() > 86){
-		$('.navbar-sticky-sec').addClass('bully-sticky')
-	} else{
-		$('.navbar-sticky-sec').removeClass('bully-sticky')
-	}
-});
-// login & register popup
-
-// Function to toggle password visibility
-	function togglePassword(fieldId) {		
-		var input = document.getElementById(fieldId);
-		if (input.type === "password") {
-			input.type = "text";
-		} else {
-			input.type = "password";
-		}
-	}
-		
-
-$('#sellLink').on('click', function(e) {
-    e.preventDefault();
-	
-	console.log('call');
-
-    $.ajax({
-        url: '<?php echo get_stylesheet_directory_uri(); ?>/check_auth.php',
-        type: 'POST',
-        success: function(response) {
-            console.log('Server response:', response);
-
-			if (response == 'no') {
-
-				  console.log('run:', response);
-				// Show the modal and display the register form
-				document.getElementById('register-modal').style.display = "flex";
-				document.getElementById('login-container').style.display = "block";
-				document.getElementById('signup-container').style.display = "none";
-				
-				
-				$('#toPostnAdd').val('sell');
-
-				// Display alert message
-				document.getElementById('alert-message').innerText = "Please login an account first.";
-			} else if (response === 'redirect') {
-				// Redirect to the 'post an ad' page
-				window.location.href = '/post-an-ad/';
-			}
-        }
-    });
-});
-
-
-
-	document.getElementById('signup-container').style.display = 'none';
-	document.getElementById('login-container').style.display = 'block';
-
-	document.getElementById('show-login').addEventListener('click', function(event) {
-		event.preventDefault();
-		document.getElementById('signup-container').style.display = 'none';
-		document.getElementById('login-container').style.display = 'block';
-	});
-
-	document.getElementById('show-signup').addEventListener('click', function(event) {
-		event.preventDefault();
-		document.getElementById('login-container').style.display = 'none';
-		document.getElementById('signup-container').style.display = 'block';
-	});
-// 	document.getElementById('show-signup2').addEventListener('click', function(event) {
-// 		event.preventDefault();
-// 		document.getElementById('login-container').style.display = 'none';
-// 		document.getElementById('signup-container').style.display = 'block';
-// 	});
-
-// login & register popup
-	
-function bullytoggleDropdown() {
-	const bullyDropdownContent = document.getElementById('bullyDropdownContent');
-    bullyDropdownContent.style.display = bullyDropdownContent.style.display === 'block' ? 'none' : 'block';
-}
-
-// Function to update the selected country
-function selectCountry(countryName, countryFlagUrl) {
-    document.getElementById('selectedCountryName').textContent = countryName;
-    document.getElementById('selectedCountryFlag').src = countryFlagUrl;
-    toggleDropdown(); // Close dropdown after selection
-}
-
-// Close dropdown if clicking outside of it
-window.onclick = function(event) {
-    const dropdown = document.querySelector('.bully-dropdown');
-	
-    if ((dropdown != null) && (!dropdown.contains(event.target))) {
-        document.getElementById('bullyDropdownContent').style.display = 'none';
-    }
-}	
-	
-// Select the "All Categories" link and the dropdown menu
+// // Select the "All Categories" link and the dropdown menu
 const allCategoriesLink = document.querySelector('.header-all-categories');
 const categoriesDropdown = document.querySelector('.header-categories-dropdown');
 
@@ -3498,48 +3225,173 @@ function hideMenu(menu) {
   menu.style.display = 'none';
 }
 	
+
+
+</script>
+
+
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("register-modal");
+    const modalTriggers = ["open-modal", "sell-modal", "sell-modal2"];
+
+    modalTriggers.forEach(id => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.addEventListener("click", showModal);
+        } else {
+            console.error(`Element with id '${id}' not found.`);
+        }
+    });
+
+    function showModal(e) {
+        e.preventDefault();
+        if (modal) {
+            console.log("Opening modal");
+            modal.style.display = "flex"; // Show modal as flex
+        } else {
+            console.error("Modal element not found.");
+        }
+    }
+});
+
+
+
+document.getElementById('show-signup').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('login-container').style.display = 'none';
+    document.getElementById('signup-container').style.display = 'block';
+});
+
+document.getElementById('show-login').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('signup-container').style.display = 'none';
+    document.getElementById('login-container').style.display = 'block';
+});
+
+
+		
+// Close modal when the close button is clicked
+$('.close').on('click', function() {
+    $('#register-modal').hide();
+    $('#register-alert').hide(); // Hide alert when modal is closed
+});
 	
 	
-// Helper function to validate input fields with custom error messages
-function validateField(selector, errorSelector, customErrorMessage) {
-    let value = $(selector).val().trim();
-    let errorField = $(errorSelector);
-    let isValid = true;
+	$(document).ready(function() {
+    // Re-initialize dropdowns
+    $('#navbarDropdown').dropdown();
+});
+	
 
-    if (value === '' || value === null) {
-        errorField.text(customErrorMessage);  // Show custom error message
-        isValid = false;
-    } else {
-        errorField.text('');
-    }
 
-    return isValid;
-}
+$(document).ready(function(){	
+        $('.ruk-dog-card-row').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            arrows: true,
+			nextArrow: '<i class="fa fa-angle-right"></i>',
+		    prevArrow: '<i class="fa fa-angle-left"></i>',
+			dots: false,
+			 responsive: [                
+				{
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+	
+	   $('.shop-banner-listing').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+			dots: false,
+			 responsive: [                
+				{
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },				 
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });	
+	
+		$('.bully-home-top-banner').slick({
+            autoplay: true,
+            autoplaySpeed: 5000,
+            arrows: false,
+			dots: true,			
+		});
+	
+    });	
+	
+	   $('.list-blog-post').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            arrows: false,
+			dots: false,
+			 responsive: [                
+				{
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },				 
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });	
+	
 
-// Validate the password and confirm password match
-function validatePasswords() {
-    const password = $('#password').val().trim();
-    const confirmPassword = $('#confirm-password').val().trim();
-    const errorField = $('#confirmPasswordError');
-    let isValid = true;
 
-    if (password !== confirmPassword) {
-        errorField.text('Password and Confirm Password do not match.');
-        isValid = false;
-    } else {
-        errorField.text('');
-    }
-
-    // Validate password length (at least 8 characters)
-    if (password.length < 8) {
-        $('#passwordError').text('Password must be at least 8 characters long.');
-        isValid = false;
-    } else {
-        $('#passwordError').text('');
-    }
-
-    return isValid;
-}
 
 jQuery(document).ready(function ($) {
     $('#signup-btn').on('click', function (event) {
@@ -3603,60 +3455,635 @@ jQuery(document).ready(function ($) {
 });
 
 
+
+
+// document.addEventListener("DOMContentLoaded", function () {
+
+// // Attach click event to the cta-label label
+//   const ctaLabel = document.querySelector('.cta-label');
+//   ctaLabel.addEventListener("click", function () {
+// //   alert('OK');
+//     const ctaGroup = document.querySelector('.cta-195');
+//     ctaGroup.classList.toggle('open');
+//  });
+
+
+// // Attach click event to the location label
+//   const locationLabel = document.querySelector('.location-label');
+//   locationLabel.addEventListener("click", function () {
+//   //alert('OK');
+//     const locationGroup = document.querySelector('.location-filter');
+//     locationGroup.classList.toggle('open');
+//  });
+
+
+//   // Attach click event to the gender label
+//   const genderLabel = document.getElementById("genderLabel");
+//   genderLabel.addEventListener("click", function () {
+//   //alert('OK');
+//     const genderGroup = document.querySelector('.gender-group');
+//     genderGroup.classList.toggle('open');
+//  });
+  
+//   // Attach click event to the price label
+//   const priceLabel = document.querySelector('.price');
+//   priceLabel.addEventListener("click", function () {
+//   //alert('OK');
+//     const priceGroup = document.querySelector('.filter-price');
+//     priceGroup.classList.toggle('down');
+//  });
+  
+// // Attach click event to the age label
+//   const ageLabel = document.querySelector('.age');
+//   ageLabel.addEventListener("click", function () {
+//   //alert('OK');
+//     const ageGroup = document.querySelector('.filter-age');
+//     ageGroup.classList.toggle('down');
+//  });
+ 
+ 
+// });    
+	
+// 	        $('.back-link').on('click', function() {
+//             // 	console.log('test');
+//             var subSubMenu = this.closest('.sub-sub-menu');
+//             if (subSubMenu) {
+//                 subSubMenu.style.display = 'none';
+//             }
+//         });
+
+//         $('.sub-back-link').on('click', function() {
+//             var SubMenu = this.closest('.sub-menu');
+//             if (SubMenu) {
+//                 SubMenu.style.display = 'none';
+//             }
+//             // Hide alert when modal is closed
+//         });
+	
+	
+// document.addEventListener("DOMContentLoaded", function () {
+//     const loginForm = document.querySelector(".login-form");
+//     const loginBtn = document.getElementById("login-btn");
+//     const spinner = loginBtn.querySelector(".spinner");
+//     const errorMsg = document.querySelector(".login-error-msg");
+//     const successMsg = document.querySelector(".login-success-msg");
+//     const ajaxUrl = "<?php echo admin_url('admin-ajax.php'); ?>";
+
+//     loginForm.addEventListener("submit", function (e) {
+//         e.preventDefault();
 		
-// Close modal when the close button is clicked
-$('.close').on('click', function() {
-    $('#register-modal').hide();
-    $('#register-alert').hide(); // Hide alert when modal is closed
-});
+// 	    loginBtn.disabled = true;
+//     	spinner.style.display = "inline-block";
+
+//         const formData = new FormData(loginForm);
+//         formData.append("action", "user_login");
+
+//         // Clear messages
+//         errorMsg.textContent = "";
+//         successMsg.textContent = "";
+
+//         // Show loading spinner
+//         spinner.style.display = "inline-block";
+
+//         fetch(ajaxUrl, {
+//             method: "POST",
+//             body: formData,
+//         })
+//             .then((response) => response.json())
+//             .then((result) => {
+//                 spinner.style.display = "none";
+			
+// 				console.log('result', result);
+
+//                 if (result.success) {
+//                     successMsg.textContent = "Login successful!...";
+//                     setTimeout(() => {
+//                         window.location.href = result.data.redirect;
+//                     }, 1500);
+//                 } else {
+//                     errorMsg.textContent = result.data.message;
+//                 }
+			
+// 				 // Re-enable the button
+// 				loginBtn.disabled = false;
+//             })
+//             .catch((error) => {
+//                 spinner.style.display = "none";
+//                 errorMsg.textContent = "An error occurred. Please try again.";
+//                 console.error("Login error:", error);
+// 				loginBtn.disabled = false;
+//             });
+//     });
+// });
+	
+// 	jQuery(document).ready(function($) {
+// //     setTimeout(function() {
+// //         $('.state1').select2({
+// //             placeholder: 'Locations',
+// //             allowClear: true
+// //         });
+// //     }, 100);
+
+//     const urlParams = new URLSearchParams(window.location.search);
+//     const search = urlParams.get('search');
+//     const state = urlParams.get('state');
+
+//     if (urlParams && search && state) {
+//         fetchSuggestions(search, state);
+//     }
+
+//     let previousSuggestions = [];
+//     let debounceTimer = null;
+//     const cache = new Map(); // Cache to store previous search results
+
+//     // Trigger search suggestions on input with debounce
+//     $('#search-input').on('input', function() {
+// // 		console.log('test');
+//         const search = $(this).val().trim();
+//         const state = $('#state li.selected').data('value');
+
+//         if (search.length > 0) {
+//             if (cache.has(search)) {
+//                 // Use cached results if available
+//                 showSuggestions(cache.get(search));
+//             } else {
+//                 showLoadingIndicator();
+
+//                 clearTimeout(debounceTimer);
+//                 debounceTimer = setTimeout(() => {
+//                     fetchSuggestions(search, state);
+//                 }, 300); // Adjust debounce time as needed
+//             }
+//         } else {
+//             hideSuggestions();
+//         }
+//     });
+
+//     $('#search-input').on('click', function() {
+//         if (previousSuggestions.length > 0) {
+//             showSuggestions(previousSuggestions);
+//         }
+//     });
+
+//     function fetchSuggestions(search, state) {
+//         $.ajax({
+//             url: ajax_object.ajax_url,
+//             method: 'POST',
+//             data: {
+//                 action: 'search_products',
+//                 search: search,
+//                 state: state,
+//                 nonce: ajax_object.nonce
+//             },
+//             success: function(response) {
+//                 hideLoadingIndicator();
+//                 if (response.success) {
+//                     const results = response.data;
+//                     previousSuggestions = results;
+//                     cache.set(search, results); // Cache the results
+//                     showSuggestions(results);
+//                 } else {
+//                     hideSuggestions();
+//                 }
+//             },
+//             error: function() {
+//                 hideLoadingIndicator();
+//                 hideSuggestions();
+//             }
+//         });
+//     }
+
+//     function showLoadingIndicator() {
+//         $('.loading').show();
+//     }
+
+//     function hideLoadingIndicator() {
+//         $('.loading').hide();
+//     }
+
+//     function showSuggestions(products) {
+//         const suggestionsDropdown = $('#suggestions-dropdown');
+//         suggestionsDropdown.empty();
+
+//         products.forEach(product => {
+//             const item = $('<div class="suggestion-item"></div>').text(product.title);
+//             item.on('click', function() {
+//                 $('#search-input').val(product.title);
+//                 suggestionsDropdown.hide();
+//             });
+
+//             suggestionsDropdown.append(item);
+//         });
+
+//         suggestionsDropdown.show();
+//     }
+
+//     function hideSuggestions() {
+//         $('#suggestions-dropdown').hide().empty();
+//     }
+
+//     $(document).on('click', function(event) {
+//         if (!$(event.target).closest('#search-input, #suggestions-dropdown').length) {
+//             hideSuggestions();
+//         }
+//     });
+
+//     $('#search-input, #suggestions-dropdown').on('click', function(event) {
+//         event.stopPropagation();
+//     });
+
+//     $('.search-button').on('click', function() {
+//         const state = $('#state li.selected').data('value');
+//         const s = $('#search-input').val();
+//         const search = encodeURIComponent(s);
+//         const stateParam = state ? `&state=${state}` : '';
+
+//         window.location.href = `/category?search=${search}${stateParam}`;
+//     });
+
+//     $('.category-item > a').on('click', function(event) {
+//         event.preventDefault();
+//         $('.category-item > a p').hide();
+//         $(this).find('p').show();
+//     });
+// });
+
+		
+// // navigation bar stiky
+// $(window).scroll(function(){	       
+// 	if($(this).scrollTop() > 86){
+// 		$('.navbar-sticky-sec').addClass('bully-sticky')
+// 	} else{
+// 		$('.navbar-sticky-sec').removeClass('bully-sticky')
+// 	}
+// });
+// // login & register popup
+
+// // Function to toggle password visibility
+// 	function togglePassword(fieldId) {		
+// 		var input = document.getElementById(fieldId);
+// 		if (input.type === "password") {
+// 			input.type = "text";
+// 		} else {
+// 			input.type = "password";
+// 		}
+// 	}
+		
+
+// $('#sellLink').on('click', function(e) {
+//     e.preventDefault();
+	
+// 	console.log('call');
+
+//     $.ajax({
+//         url: '<?php echo get_stylesheet_directory_uri(); ?>/check_auth.php',
+//         type: 'POST',
+//         success: function(response) {
+//             console.log('Server response:', response);
+
+// 			if (response == 'no') {
+
+// 				  console.log('run:', response);
+// 				// Show the modal and display the register form
+// 				document.getElementById('register-modal').style.display = "flex";
+// 				document.getElementById('login-container').style.display = "block";
+// 				document.getElementById('signup-container').style.display = "none";
+				
+				
+// 				$('#toPostnAdd').val('sell');
+
+// 				// Display alert message
+// 				document.getElementById('alert-message').innerText = "Please login an account first.";
+// 			} else if (response === 'redirect') {
+// 				// Redirect to the 'post an ad' page
+// 				window.location.href = '/post-an-ad/';
+// 			}
+//         }
+//     });
+// });
+
+
+
+// 	document.getElementById('signup-container').style.display = 'none';
+// 	document.getElementById('login-container').style.display = 'block';
+
+// 	document.getElementById('show-login').addEventListener('click', function(event) {
+// 		event.preventDefault();
+// 		document.getElementById('signup-container').style.display = 'none';
+// 		document.getElementById('login-container').style.display = 'block';
+// 	});
+
+// 	document.getElementById('show-signup').addEventListener('click', function(event) {
+// 		event.preventDefault();
+// 		document.getElementById('login-container').style.display = 'none';
+// 		document.getElementById('signup-container').style.display = 'block';
+// 	});
+// // 	document.getElementById('show-signup2').addEventListener('click', function(event) {
+// // 		event.preventDefault();
+// // 		document.getElementById('login-container').style.display = 'none';
+// // 		document.getElementById('signup-container').style.display = 'block';
+// // 	});
+
+// // login & register popup
+	
+// function bullytoggleDropdown() {
+// 	const bullyDropdownContent = document.getElementById('bullyDropdownContent');
+//     bullyDropdownContent.style.display = bullyDropdownContent.style.display === 'block' ? 'none' : 'block';
+// }
+
+// // Function to update the selected country
+// function selectCountry(countryName, countryFlagUrl) {
+//     document.getElementById('selectedCountryName').textContent = countryName;
+//     document.getElementById('selectedCountryFlag').src = countryFlagUrl;
+//     toggleDropdown(); // Close dropdown after selection
+// }
+
+// // Close dropdown if clicking outside of it
+// window.onclick = function(event) {
+//     const dropdown = document.querySelector('.bully-dropdown');
+	
+//     if ((dropdown != null) && (!dropdown.contains(event.target))) {
+//         document.getElementById('bullyDropdownContent').style.display = 'none';
+//     }
+// }	
+	
+// // Select the "All Categories" link and the dropdown menu
+// const allCategoriesLink = document.querySelector('.header-all-categories');
+// const categoriesDropdown = document.querySelector('.header-categories-dropdown');
+
+// // Function to show and hide menus
+// function showMenu(menu) {
+//   menu.style.display = 'block';
+// }
+
+// //.bully .sub-menu
+ 	
+// function hideMenu(menu) {
+//   menu.style.display = 'none';
+// }
+
+// // Toggle the dropdown when clicking "All Categories"
+// allCategoriesLink.addEventListener('click', (e) => {
+// // 	alert('test');
+//   e.preventDefault();
+//   const isDropdownVisible = categoriesDropdown.style.display === 'block';
+//   if (isDropdownVisible) {
+//     hideMenu(categoriesDropdown);
+//   } else {
+//     showMenu(categoriesDropdown);
+	
+//     // Only show sub-menu and sub-sub-menu for the first category
+// //     const firstCategoryItem = categoriesDropdown.querySelector('.category-item');
+// //     if (firstCategoryItem) {
+// //       const firstSubMenu = firstCategoryItem.querySelector('.sub-menu');
+// //       if (firstSubMenu) {
+// //         showMenu(firstSubMenu);
+
+// //         // Show sub-sub-menu items within the first sub-menu
+// //         firstSubMenu.querySelectorAll('.sub-sub-menu').forEach(subSubMenu => {
+// //           showMenu(subSubMenu);
+// //         });
+// //       }
+// //     }	  	  	  
+	  
+//   }
+// });
+
+// // Close the mega menu when clicking outside of it
+// document.addEventListener('click', (e) => {
+//   if (!categoriesDropdown.contains(e.target) && e.target !== allCategoriesLink) {
+//     hideMenu(categoriesDropdown);
+//   }
+// });	
+
+// const categoryItems = document.querySelectorAll('.category-item');
+
+	
+// // Show sub-menu for the first category item with both sub and sub-sub categories
+// const firstCategoryItem = categoryItems[0];
+// const remainingCategoryItems = Array.from(categoryItems).slice(1); // Get all except the first
+
+// if (firstCategoryItem) {
+//   const firstChildMenu = firstCategoryItem.querySelector('.sub-menu');
+
+//   // Handle first category with sub and sub-sub-menus
+//   firstCategoryItem.addEventListener('mouseenter', () => {
+//     if (firstChildMenu) showMenu(firstChildMenu);
+//   });
+
+//   firstCategoryItem.addEventListener('mouseleave', (event) => {
+//     if (firstChildMenu && !firstCategoryItem.contains(event.relatedTarget)) {
+//       hideMenu(firstChildMenu);
+//     }
+	  
+//   });
+
+//   // Handle sub-sub-menu for first category's sub-category items
+//   const firstSubCategoryItems = firstCategoryItem.querySelectorAll('.sub-category-item');
+//   firstSubCategoryItems.forEach(subCategory => {
+//     const subChildMenu = subCategory.querySelector('.sub-sub-menu');
+    
+//     subCategory.addEventListener('mouseenter', () => {
+//       if (subChildMenu) showMenu(subChildMenu);
+//     });
+
+//     subCategory.addEventListener('mouseleave', (event) => {
+//       if (subChildMenu && !subCategory.contains(event.relatedTarget)) {
+//         hideMenu(subChildMenu);
+//       }
+//     });
+//   });
+// }
+
+	
+// // For remaining categories, only display sub-menus
+// remainingCategoryItems.forEach(category => {
+//   const childMenu = category.querySelector('.sub-menu');
+  
+//   category.addEventListener('mouseenter', () => {
+//     if (childMenu) showMenu(childMenu);
+//   });
+
+//   category.addEventListener('mouseleave', (event) => {
+//     if (childMenu && !category.contains(event.relatedTarget)) {
+//       hideMenu(childMenu);
+//     }
+//   });
+// });
+
+// // Functions to show and hide menus
+// function showMenu(menu) {
+//   menu.style.display = 'block';
+// }
+
+// function hideMenu(menu) {
+//   menu.style.display = 'none';
+// }
 	
 	
-	$(document).ready(function() {
-    // Re-initialize dropdowns
-    $('#navbarDropdown').dropdown();
-});
+
+	
+// // Helper function to validate input fields with custom error messages
+// function validateField(selector, errorSelector, customErrorMessage) {
+//     let value = $(selector).val().trim();
+//     let errorField = $(errorSelector);
+//     let isValid = true;
+
+//     if (value === '' || value === null) {
+//         errorField.text(customErrorMessage);  // Show custom error message
+//         isValid = false;
+//     } else {
+//         errorField.text('');
+//     }
+
+//     return isValid;
+// }
+
+// // Validate the password and confirm password match
+// function validatePasswords() {
+//     const password = $('#password').val().trim();
+//     const confirmPassword = $('#confirm-password').val().trim();
+//     const errorField = $('#confirmPasswordError');
+//     let isValid = true;
+
+//     if (password !== confirmPassword) {
+//         errorField.text('Password and Confirm Password do not match.');
+//         isValid = false;
+//     } else {
+//         errorField.text('');
+//     }
+
+//     // Validate password length (at least 8 characters)
+//     if (password.length < 8) {
+//         $('#passwordError').text('Password must be at least 8 characters long.');
+//         isValid = false;
+//     } else {
+//         $('#passwordError').text('');
+//     }
+
+//     return isValid;
+// }
+
+
+
+
+// jQuery(document).ready(function ($) {
+//     $('#signup-btn').on('click', function (event) {
+//         event.preventDefault();
+
+//         const signUpBtn = $('#signup-btn');
+//         const spinner = signUpBtn.find('.spinner');
+//         let isValid = true;
+		
+
+//         isValid = validateField('#fullname', '#fullnameError', 'Enter your name') && isValid;
+//         isValid = validateField('#email', '#emailError', 'Enter a valid email') && isValid;
+//         isValid = validatePasswords() && isValid;
+
+//         if (!isValid) return false;
+
+//         spinner.show();
+// 		signUpBtn.disabled = true;
+//         $.ajax({
+//             type: 'POST',
+//             url: ajax_object.ajax_url,
+//             data: {
+//                 action: 'handle_registration',
+//                 nonce: ajax_object.nonce,
+//                 fullname: $('#fullname').val(),
+//                 email: $('#email').val(),
+//                 password: $('#password').val(),
+//                 confirmPassword: $('#confirm-password').val()
+//             },
+//             dataType: 'json',
+//             success: function (response) {
+//                 spinner.hide();
+
+//                 if (response.success) {
+// 					 $('.register-form')[0].reset();
+// 					signUpBtn.disabled = false;
+					
+// 					swal({
+// 						title: 'Registration Successful',
+// 						text: response.data.successMessage,
+// 						icon: 'success',
+// 					}).then(() => {
+// 						window.location.href = response.data.redirect;
+// 					});
+//                 } else {
+// 					swal({
+// 						title: 'Registration Failed',
+// 						text: response.data.errorMessage,
+// 						icon: 'error',
+// 					});
+// 					signUpBtn.disabled = false;
+//                 }
+//             },
+//             error: function () {
+//                 spinner.hide();
+//                 swal('Something went wrong!', 'Please try again later.', 'error');
+// 				signUpBtn.disabled = false;
+//             }
+//         });
+//     });
+// });
+
+
+		
+// // Close modal when the close button is clicked
+// $('.close').on('click', function() {
+//     $('#register-modal').hide();
+//     $('#register-alert').hide(); // Hide alert when modal is closed
+// });
+	
+	
+// 	$(document).ready(function() {
+//     // Re-initialize dropdowns
+//     $('#navbarDropdown').dropdown();
+// });
 	
 
 
-		console.log('test0');
+// 		console.log('test0');
 	
-	document.addEventListener("DOMContentLoaded", function () {
-		console.log('test1');
-    const modal = document.getElementById("register-modal");
-		console.log(modal);
-    const openModal = document.getElementById("open-modal");
-    const sellModal = document.getElementById("sell-modal");
-    const sellModal2 = document.getElementById("sell-modal2");
-    const closeModal = document.querySelector(".close");
+// 	document.addEventListener("DOMContentLoaded", function () {
+// 		console.log('test1');
+//     const modal = document.getElementById("register-modal");
+// 		console.log(modal);
+//     const openModal = document.getElementById("open-modal");
+//     const sellModal = document.getElementById("sell-modal");
+//     const sellModal2 = document.getElementById("sell-modal2");
+//     const closeModal = document.querySelector(".close");
 
-    // Function to show modal
-    const showModal = (e) => {
-        e.preventDefault();
-        if (modal) {
-            console.log("Opening modal");
-            modal.style.display = "flex"; // Show modal as flex
-        }
-    };
 
-    // Add event listeners if elements exist
-    if (openModal) openModal.addEventListener("click", showModal);
-    if (sellModal) sellModal.addEventListener("click", showModal);
-    if (sellModal2) sellModal2.addEventListener("click", showModal);
+//     // Add event listeners if elements exist
+//     if (openModal) openModal.addEventListener("click", showModal);
+//     if (sellModal) sellModal.addEventListener("click", showModal);
+//     if (sellModal2) sellModal2.addEventListener("click", showModal);
 
-    // Close modal when 'x' is clicked
-    if (closeModal) {
-        closeModal.addEventListener("click", function () {
-            if (modal) modal.style.display = "none";
-        });
-    }
+//         // Function to show modal
+//         const showModal = (e) => {    
+//         e.preventDefault();
+//         if (modal) {
+//             console.log("Opening modal");
+//             modal.style.display = "flex"; // Show modal as flex
+//         }
+//     };
 
-    // Close modal if clicking outside the modal content
-    window.addEventListener("click", function (e) {
-        if (modal && e.target === modal) {
-            modal.style.display = "none";
-        }
-    });
-});
+//     // Close modal when 'x' is clicked
+//     if (closeModal) {
+//         closeModal.addEventListener("click", function () {
+//             if (modal) modal.style.display = "none";
+//         });
+//     }
+
+//     // Close modal if clicking outside the modal content
+//     window.addEventListener("click", function (e) {
+//         if (modal && e.target === modal) {
+//             modal.style.display = "none";
+//         }
+//     });
+// });
 
 
 </script>
