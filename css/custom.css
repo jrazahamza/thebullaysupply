@@ -1612,6 +1612,8 @@ section#banner-promotion .template-page-title p {
     line-height: normal;
     font-weight: 400;
 	border-radius:5px;
+    width: 100%;
+    border: unset;
 }
 .popup-class .inner-popup .flex-class-popup .flex-class-popup-item textarea {
     height: 96px;
@@ -1622,6 +1624,8 @@ section#banner-promotion .template-page-title p {
     resize: unset;
     font-weight: 400;
 	border-radius:5px;
+    width: 100%;
+    border: unset;
 }
 .popup-class .inner-popup .flex-class-popup .flex-class-popup-item select {
     height: 40px;
@@ -1675,7 +1679,7 @@ section#banner-promotion .template-page-title p {
     margin: 16px 0px 0px;
 }
 .right-button input[type="submit"] {
-    background-color:#0B1E3E !important;
+     background-color:#0B1E3E !important;
     border-radius:20px;
 }
 

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bully Supply</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/bully-custom-style.css">
     <link rel="stylesheet" href="fonts/novaklasse.otf">
     <!-- Slick Slider CSS -->
@@ -1848,6 +1849,47 @@
         </div>
     </div>
 
+    <div class="popup-class" id="contactUsPopup" style="display: none;">
+        <div class="inner-popup">
+            <div class="popup-title">
+                <h3>Contact Us <i class="fa fa-times closeModel"></i></h3>
+                <form class="billing-address-and-shipping-address formValidationQuery" method="post" id="billing-address">
+                    <input type="hidden" name="id" value="114">
+                <div class="flex-class-popup">
+                    <div class="flex-class-popup-item flex-class-popup-item-left">
+                            <div class="leftSide">
+                                <div class="input-blocks input-block01">
+                                    <label for="firstName">First Name<span>*</span></label>
+                                    <input type="text" name="firstName" id="firstName" value="" required="" fdprocessedid="soetuo">
+                                </div>
+                                <div class="input-blocks input-block02">
+                                    <label for="emailAddress">Email<span>*</span></label>
+                                    <input type="email" name="emailAddress" id="emailAddress" value="" required="" fdprocessedid="259f20i">
+                                </div>
+                            </div>
+                            <div class="rightSide">
+                                <div class="input-blocks input-block01">
+                                    <label for="phoneNumber">Phone Number<span>*</span></label>
+                                    <input type="tel" name="phoneNumber" id="phoneNumber" value="" required="" fdprocessedid="q1s6id">
+                                </div>
+                                <div class="input-blocks input-block01">
+                                    <label for="address">Address<span>*</span></label>
+                                    <input type="text" name="address" id="address" value="" required="" fdprocessedid="ysbv6o">
+                                </div>
+                            </div>
+                            <div class="input-blocks input-block02">
+                                <label for="description">Description</label>
+                                <textarea name="description"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form></div>
+                <div class="right-button">
+                    <input type="submit" name="submit" value="Send Request" fdprocessedid="2qn69r">
+                </div>
+                
+            </div>
+    </div>    
 
 <!-- ========================================== -->
 <!-- Footer Area-->
@@ -2190,6 +2232,7 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
 	
 <script>
+    
 $(document).ready(function(){							
         $('.ruk-dog-pro-detail').slick({
             centerMode: true,			
@@ -2238,6 +2281,7 @@ $(document).ready(function(){
          jQuery('.productDescriptionMainImage').attr('src',jQuery(this).attr('src'));
     });
     jQuery(document).on('click','.pd_button1',function(){
+        // alert('Test Click');
          jQuery('#contactUsPopup').show();
     });
     jQuery(document).on('click','.closeModel',function(){
