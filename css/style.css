@@ -1181,7 +1181,9 @@ align-items: center;
     border-bottom: none;
     padding: 20px 0px;
 }
-
+/* .categories-list .sub-menu {
+    position: relative;
+} */
 .categories-list .bully:after {
     content:'';
     width:230px;
@@ -1189,7 +1191,7 @@ align-items: center;
     background-color:#D0D0D0;
     position:absolute;
     top:118px;
-    left:20;
+    left:10px;
 }
 .categories-list .supplies:after {
     content:'';
@@ -1198,7 +1200,7 @@ align-items: center;
     background:#D0D0D0;
    position:absolute;
    top:210px;
-  left:20;
+  left:10px;
 
 }
 
@@ -1209,7 +1211,7 @@ align-items: center;
     background-color:#D0D0D0;
     position:absolute;
     top:302px;
-    left:20;
+    left:10px;
 }
 .supplies .sub-menu .sub-category-item {
     padding:28px 0px;

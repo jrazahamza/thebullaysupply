@@ -3138,18 +3138,18 @@ allCategoriesLink.addEventListener('click', (e) => {
     showMenu(categoriesDropdown);
 	
     // Only show sub-menu and sub-sub-menu for the first category
-//     const firstCategoryItem = categoriesDropdown.querySelector('.category-item');
-//     if (firstCategoryItem) {
-//       const firstSubMenu = firstCategoryItem.querySelector('.sub-menu');
-//       if (firstSubMenu) {
-//         showMenu(firstSubMenu);
+    const firstCategoryItem = categoriesDropdown.querySelector('.category-item');
+    if (firstCategoryItem) {
+      const firstSubMenu = firstCategoryItem.querySelector('.sub-menu');
+      if (firstSubMenu) {
+        showMenu(firstSubMenu);
 
-//         // Show sub-sub-menu items within the first sub-menu
-//         firstSubMenu.querySelectorAll('.sub-sub-menu').forEach(subSubMenu => {
-//           showMenu(subSubMenu);
-//         });
-//       }
-//     }	  	  	  
+        // Show sub-sub-menu items within the first sub-menu
+        firstSubMenu.querySelectorAll('.sub-sub-menu').forEach(subSubMenu => {
+          showMenu(subSubMenu);
+        });
+      }
+    }	  	  	  
 	  
   }
 });
