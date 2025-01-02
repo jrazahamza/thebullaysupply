@@ -1249,8 +1249,22 @@ margin-left:60px;
       color: #8B1339;
       
   }
-  
-  
+
+  .my-favourites-section .my-favourites-lits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+}
+.my-favourites-lits .favourite-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.my-favourites-lits .dog-card-body {
+  padding: 20px 20px;
+}
+
+
   .ruk-dog-card-row .dog-card > img {
       position: relative;
   }

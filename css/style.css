@@ -58,6 +58,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .ruk-register-form .formValidationQuery {
     height:182px;
     display:flex;
@@ -79,7 +80,6 @@
     border-radius: 5px;
     padding: 10px 10px !important;
 }
-
 .register-form .form-group input {
     width: 100%;
     background-color: #f1f1f1;
@@ -87,7 +87,6 @@
     border-radius: 5px;
     padding: 10px 10px !important;
 }
-
 
 .ruk-register-form .formValidationQuery .form-group{
 	margin-bottom:-16px !important;

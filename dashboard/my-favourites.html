@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Bully Supply</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bully-custom-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="../css/bully-custom-style.css">
+    <link rel="stylesheet" href="../css/bully-dashbord-style.css">
     <link rel="stylesheet" href="fonts/novaklasse.otf">
     <!-- Slick Slider CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
@@ -30,7 +32,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        
 
 </head>
-
+ph
 <body>
     <!-- ========================== -->
     <!-- Header section -->
@@ -156,9 +158,8 @@
                                         <small>Hello</small><br>
                                         Sign in </a>
                                     <ul class="dropdown-menu small-screen-cls" aria-labelledby="navbarDropdown">
-                                        <li class="nav-item sign-in-user signin-445">
-                                            <a id="open-modal" class="nav-link" href="#">Sign In</a>
-                                        </li>
+                                        <li class="nav-item sign-in-user signin-445"><a id="open-modal" class="nav-link"
+                                                href="#">Sign In</a></li>
                                         <li class="signin-arah6898">
                                             <p class="sign-in-tws78">Experience joy and companionship with our amazing
                                                 bully dogs.</p>
@@ -1670,921 +1671,318 @@
         </div>
     </header>
     <!-- ================================= -->
-    <!-- Main Banner Section -->
+    <!-- My Favourites page -->
     <!-- ================================= -->
-    <section class="bully-main-banner bully-home-top-banner">
-        <div class="banner-lider-item">
-            <div class="main-banner-signle-img safari-height">
-                <img src="https://thebullysupply.com/wp-content/uploads/2024/11/main-home-banner.png" class="large-screen" alt="" />
-                <!-- 				<img src="/wp-content/uploads/2024/11/Website-Main-Banner-Optionh-2-1.png" class="small-screen" alt=""/> 	 -->
-            </div>
-            <div class="main-banner-content">
-                <div class="banner-content">
-                    <h1 class="main-banner-heading">Ready To Give A Bully A Forever Home?</h1>
-                    <p class="bully-banner-text">Join our community of proud bully parents and find you new best friend!
-                    </p>
+    <section id="my-favourites" class="my-messages template-common-class">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="template-pages-content">
+                    <div class="template-sidebar">
+                        <!-- thebullysupply vender Sidebar -->
+                        <div class="sidebar-mobile-tog">
+                            <i class="fa fa-th" id="onClick" aria-hidden="true"></i>Menu
+                        </div>
+                        <div class="thebullysupply-vender-sidebar ruk-custom-sidebar">                    
+                            <!-- Individual Dropdown -->
+                            <a class="dropdown-toggle" href="#individualDropdown" data-bs-toggle="collapse" aria-expanded="true">
+                                <i class="svg-icon user">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none">
+                                        <path stroke="#000" stroke-miterlimit="10" stroke-width="1.2"
+                                            d="M10 12.5a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"></path>
+                                        <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"
+                                            d="M2.422 16.875a8.75 8.75 0 0 1 15.156 0"></path>
+                                    </svg>
+                                </i> Individual <i class="side-bar-down fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <div class="collapse show" id="individualDropdown" style="">
+                                <a href="/create-listing/" class="ps-5">Create Listings</a>
+                                &nbsp; &nbsp; &nbsp;<a href="/my-shop/" class="ps-5">Manage Listings</a>
+                                <!--      &nbsp;<a href="#" class="ps-5">Settings</a>		 -->
+                                &nbsp; &nbsp;
+                            </div>
+                    
+                            <!-- Breeder Dropdown -->
+                            <a class="dropdown-toggle" href="#breederDropdown" data-bs-toggle="collapse" aria-expanded="false">
+                                <span class="svg-icon vender-sdibar-svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none">
+                                        <path fill="#000"
+                                            d="M7.619 5.757a1.43 1.43 0 0 0-1.43 1.429.476.476 0 0 0 .954 0 .476.476 0 1 1 .952 0 .476.476 0 0 0 .952 0 1.43 1.43 0 0 0-1.428-1.43m4.762 0a1.43 1.43 0 0 0-1.428 1.429.476.476 0 0 0 .952 0 .476.476 0 0 1 .953 0 .476.476 0 1 0 .952 0 1.43 1.43 0 0 0-1.429-1.43">
+                                        </path>
+                                        <path fill="#000"
+                                            d="M18.608 3.87c-1.145-2.462-4.112-2.502-4.982-2.46C12.766.573 11.611.042 10 .042S7.233.572 6.374 1.41c-.87-.042-3.836 0-4.981 2.46C-.06 6.99-.377 9.15.445 10.293a1.88 1.88 0 0 0 1.586.768q.153 0 .304-.018c.326-.04.644-.131.942-.27-.374 1.954-.15 3.427.698 4.484 1.041 1.298 3.013 1.93 6.025 1.93s4.983-.632 6.025-1.93c.848-1.057 1.072-2.53.698-4.485.298.14.616.232.942.271q.151.018.304.018a1.88 1.88 0 0 0 1.586-.768c.823-1.143.504-3.304-.948-6.423m-16.38 6.227a1.04 1.04 0 0 1-1.01-.362C.943 9.354.494 8.058 2.256 4.271c.679-1.46 2.294-1.82 3.328-1.895C4.486 4.07 4.072 6.413 3.71 8.482q-.078.444-.155.871c-.144.3-.71.673-1.328.744M10 13.377a.953.953 0 0 1-.953-.953h1.906a.953.953 0 0 1-.953.953m5.283 1.284c-.798.994-2.38 1.502-4.807 1.562v-1.961a1.9 1.9 0 0 0 1.429-1.838.954.954 0 0 0-.952-.952H9.047a.953.953 0 0 0-.952.953c.003.866.59 1.62 1.429 1.837v1.96c-2.427-.059-4.009-.567-4.806-1.562-.707-.88-.853-2.201-.444-4.037.136-.613.253-1.283.374-1.977C5.275 5.059 5.986.994 10 .994s4.725 4.065 5.352 7.652c.121.694.238 1.364.374 1.977.408 1.836.263 3.157-.444 4.038m3.499-4.926a1.05 1.05 0 0 1-1.01.362c-.618-.07-1.183-.444-1.327-.744q-.08-.435-.155-.87c-.362-2.07-.776-4.414-1.874-6.107 1.034.076 2.65.436 3.328 1.896 1.762 3.786 1.313 5.082 1.038 5.463">
+                                        </path>
+                                    </svg>
+                                </span>
+                                <span class="breeder">Breeder <span class="color-bg-text">Coming Soon</span> </span>
+                            </a>
+                            <!--     <div class="collapse" id="breederDropdown">
+                                                  <a href="#" class="ps-5">Submenu 1</a>
+                                                  <a href="#" class="ps-5">Submenu 2</a>
+                                                </div>
+                                             -->
+                            <!-- Shop Dropdown -->
+                            <a class="dropdown-toggle" href="#shopDropdown" data-bs-toggle="collapse" aria-expanded="false"><i
+                                    class="svg-icon shop-sidebar">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none">
+                                        <path fill="#AAA"
+                                            d="M14.21 9.779h-2.718a1.35 1.35 0 0 0-1.349 1.348v2.084a1.35 1.35 0 0 0 1.349 1.349h2.717a1.35 1.35 0 0 0 1.349-1.349v-2.084a1.35 1.35 0 0 0-1.349-1.348m.367 3.432a.37.37 0 0 1-.368.368h-2.717a.37.37 0 0 1-.368-.368v-2.084c0-.204.167-.368.368-.368h2.717c.205 0 .368.168.368.368z">
+                                        </path>
+                                        <path fill="#AAA"
+                                            d="M20 5.99a.46.46 0 0 0-.065-.24L16.959.517a.49.49 0 0 0-.424-.25H3.46a.49.49 0 0 0-.425.25L.066 5.75A.5.5 0 0 0 0 5.99c0 1.173.707 2.178 1.716 2.624v8.627c0 .27.221.49.49.49H17.79c.27 0 .49-.22.49-.49V8.675q.001-.03-.004-.053A2.88 2.88 0 0 0 20 5.99M3.747 1.254H16.25l2.325 4.09H1.426zM14.234 6.32a1.884 1.884 0 0 1-3.71 0zm-4.753 0a1.884 1.884 0 0 1-1.855 1.553c-.928 0-1.7-.67-1.86-1.553zm-8.468 0h3.715a1.888 1.888 0 0 1-3.715 0m7.226 10.43h-2.82v-5.293c0-.384.31-.699.699-.699h1.426c.384 0 .699.31.699.7v5.291zm9.06 0h-8.08v-5.293c0-.923-.751-1.68-1.68-1.68H6.115c-.924 0-1.68.752-1.68 1.68v5.296H2.697v-7.9q.086.006.172.005c.989 0 1.863-.503 2.378-1.267a2.865 2.865 0 0 0 4.757 0 2.858 2.858 0 0 0 4.749 0A2.87 2.87 0 0 0 17.13 8.86c.057 0 .11-.004.168-.004zm-.168-8.873c-.928 0-1.7-.67-1.855-1.553h3.715a1.895 1.895 0 0 1-1.86 1.553">
+                                        </path>
+                                    </svg>
+                                </i> Shop <span class="color-bg-text">Coming Soon</span>
+                    
+                            </a><a href="/my-messages/">
+                                <i class="svg-icon message">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none">
+                                        <path fill="#000"
+                                            d="M1.145 15.122a1.2 1.2 0 0 0 .314 1.174 1.2 1.2 0 0 0 1.173.314l2.01-.539a8.45 8.45 0 0 0 4.328 1.183A8.53 8.53 0 0 0 15 14.777a8.5 8.5 0 0 0 2.477-6.479 8.54 8.54 0 0 0-3.197-6.183C11.183-.364 6.704-.34 3.63 2.171.348 4.854-.464 9.513 1.684 13.113zm3.253-12.01C7.03.96 10.868.938 13.52 3.061c1.655 1.326 2.629 3.209 2.744 5.304a7.3 7.3 0 0 1-2.123 5.552c-2.402 2.401-6.218 2.817-9.075.988a.6.6 0 0 0-.485-.075l-2.264.607.607-2.264a.6.6 0 0 0-.076-.484C.856 9.58 1.522 5.462 4.398 3.11">
+                                        </path>
+                                        <path fill="#000"
+                                            d="M6.851 7.26a.607.607 0 0 0 .608-.608c0-.467.21-.904.58-1.198.372-.298.841-.4 1.32-.29a1.52 1.52 0 0 1 1.12 1.121 1.54 1.54 0 0 1-.646 1.645c-.908.603-1.45 1.646-1.45 2.793a.607.607 0 1 0 1.214 0c0-.738.34-1.404.908-1.78a2.745 2.745 0 0 0 1.157-2.93 2.72 2.72 0 0 0-2.03-2.032 2.76 2.76 0 0 0-3.116 1.478c-.18.372-.273.78-.272 1.194a.607.607 0 0 0 .607.607m2.151 5.147h-.006a.605.605 0 0 0-.604.607.61.61 0 0 0 1.04.43.607.607 0 0 0-.43-1.037">
+                                        </path>
+                                    </svg>
+                                </i> Inquiries
+                            </a>
+                            <a href="/vendor-chat/"><i class="svg-icon chat">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" fill="none">
+                                        <g clip-path="url(#a)">
+                                            <path fill="#000" fill-rule="evenodd"
+                                                d="M5.466 5.637a1.057 1.057 0 1 1-.005 0zM1.1 0h17.13a1.1 1.1 0 0 1 1.101 1.101v11.46a1.1 1.1 0 0 1-1.1 1.101H9.837l-4.154 3.081c-.786.749-1.49 1.22-2.025 1.259-.787.047-1.197-.488-1.101-1.819v-2.516H1.1A1.1 1.1 0 0 1 0 12.566V1.1A1.1 1.1 0 0 1 1.101 0m17.13 1.07H1.101a.03.03 0 0 0-.03.018l-.001.013v11.46a.03.03 0 0 0 .01.018.03.03 0 0 0 .021.004h1.988a.535.535 0 0 1 .535.535v3.105c-.036.495-.043.704-.027.703.263-.016.75-.387 1.376-.982l.05-.04 4.288-3.184a.53.53 0 0 1 .353-.137h8.567a.027.027 0 0 0 .027-.027V1.101a.027.027 0 0 0-.027-.027zM9.506 5.63a1.057 1.057 0 1 1-.003 2.115 1.057 1.057 0 0 1 .003-2.114m4.041 0a1.057 1.057 0 1 1-.003 2.115 1.057 1.057 0 0 1 .003-2.114"
+                                                clip-rule="evenodd"></path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="a">
+                                                <path fill="#fff" d="M0 0h19.328v18H0z"></path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </i> My Messages
+                            </a>
+                            <a href="/product-promotion/">
+                                <i class="svg-icon megaphone">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="none">
+                                        <path fill="#000" fill-rule="evenodd"
+                                            d="M14.503 2.978a.442.442 0 1 1-.564-.683L16.593.102a.442.442 0 1 1 .564.682zM1.607 10.706a1.1 1.1 0 0 0-.65.528c-.164.29-.238.666-.233 1.068q.004.259.05.53a3.9 3.9 0 0 0 .343 1.062q.122.245.273.458c.247.344.553.617.907.754.308.122.655.14 1.029.01l.007-.001a.3.3 0 0 1 .127-.016q.045.003.09.016l.008-.004c.1-.033.205-.065.307-.097l.28-.086.29-.084q.135-.04.275-.076a.36.36 0 0 1 .275.035l.009.005a.36.36 0 0 1 .17.256c.024.11.054.225.075.336.192.86.379 1.688.627 2.359.021.067.048.132.072.199.076.211.155.43.243.629.085.194.175.366.277.493v.002c.076.095.164.155.268.16.114.005.257-.05.436-.189.078-.072.148-.133.22-.195l.016-.014c.212-.183.423-.365.515-.613a1.4 1.4 0 0 0-.19-.097l-.006-.002c-.188-.079-.375-.16-.51-.33-.138-.17-.212-.418-.16-.823q.001-.037.008-.067l.009-.074c.023-.184.035-.279.028-.305v-.004c-.005-.007-.042-.033-.116-.102l-.064-.06a.9.9 0 0 1-.236-.357 1.3 1.3 0 0 1-.074-.48c.002-.165.027-.338.064-.502.045-.199.11-.389.176-.546l.003-.005a.36.36 0 0 1 .28-.213h.004c1.333-.185 2.41-.16 3.313-.044.816.106 1.487.284 2.084.453a11 11 0 0 1-1.254-1.797 17 17 0 0 1-1.245-2.778 18.6 18.6 0 0 1-.763-2.889 11.7 11.7 0 0 1-.196-2.136 14 14 0 0 1-2.202 2.513c-1.15 1.02-2.721 2.049-4.933 2.863l-.07.023-.01.017-.038.062-.004.005a.37.37 0 0 1-.199.15zm10.049 1.363a11.6 11.6 0 0 0 1.094 1.74c.377.487.782.904 1.208 1.22l.044.003a.3.3 0 0 0 .06 0h.007a.4.4 0 0 0 .208-.065 1.1 1.1 0 0 0 .224-.352 2.3 2.3 0 0 0 .148-.543c.097-.604.05-1.377-.099-2.232-.164-.933-.454-1.96-.82-2.966a20 20 0 0 0-1.255-2.789c-.438-.796-.902-1.472-1.35-1.935a3 3 0 0 0-.482-.414 1.1 1.1 0 0 0-.396-.173h-.004q-.042-.007-.068-.009c-.008 0 0-.005-.004-.003-.002 0-.002.003-.01.01a2 2 0 0 0-.133.134l-.007.014c-.204.423-.274 1.092-.23 1.908.045.828.211 1.802.48 2.813.767-.176 1.366-.014 1.778.33.241.2.415.46.523.752a2.1 2.1 0 0 1 .113.926 2.13 2.13 0 0 1-1.029 1.631m2.24 3.68a.36.36 0 0 1-.204-.03l-.14-.028c-.334-.069-.658-.162-1.006-.26l-.023-.008c-1.196-.34-2.692-.766-5.088-.47-.031.091-.058.19-.079.287a2 2 0 0 0-.035.298q0 .112.023.199a.2.2 0 0 0 .058.102l.042.038c.196.178.29.266.346.467.044.162.024.312-.015.608q-.006.06-.015.122c-.018.142.005.225.047.276.044.053.12.086.197.118l.01.004c.246.105.492.213.62.563a.37.37 0 0 1 .023.21v.002c-.055.283-.172.5-.318.685-.143.181-.312.326-.479.47l-.039.034q-.087.073-.169.151l-.028.025c-.382.305-.708.414-.995.384-.29-.03-.532-.203-.737-.46a3 3 0 0 1-.36-.623c-.103-.23-.191-.47-.276-.705q-.034-.098-.072-.195c-.26-.703-.452-1.558-.65-2.44-.063.017-.127.039-.19.056q-.148.044-.289.088l-.28.088-.005.002-.034.012-.005.002a.6.6 0 0 1-.173.053.3.3 0 0 1-.155-.021c-.509.14-.979.098-1.398-.07-.476-.194-.884-.555-1.209-1.008l-.003-.004a4.6 4.6 0 0 1-.735-1.821A4.4 4.4 0 0 1 0 12.309c-.005-.532.099-1.036.33-1.443.207-.364.517-.65.938-.808q.023-.037.043-.064a.5.5 0 0 1 .08-.084l.008-.006a.5.5 0 0 1 .107-.068c.036-.016.076-.032.13-.051l.05-.018c2.239-.824 3.787-1.878 4.899-2.908C7.696 5.829 8.373 4.82 8.86 4.088l.01-.016c.273-.409.493-.735.713-.955.057-.056.106-.102.159-.14a.7.7 0 0 1 .384-.14q.103-.004.234.018c.208.033.42.12.633.253q.326.206.651.547c.483.5.98 1.222 1.447 2.066.486.877.94 1.885 1.314 2.915.384 1.057.687 2.139.857 3.13.157.914.203 1.755.094 2.426a3 3 0 0 1-.218.76 1.8 1.8 0 0 1-.386.56l-.023.022-.032.023a1.17 1.17 0 0 1-.611.204h-.007q-.053 0-.1-.002-.04-.006-.083-.01m4.336-1.925a.44.44 0 0 1-.458-.425.44.44 0 0 1 .424-.458l3.1-.116a.443.443 0 0 1 .034.884zm-.088-3.012a.443.443 0 0 1-.118-.876l2.864-.38a.443.443 0 0 1 .118.875zm-.603-2.766a.444.444 0 0 1-.29-.837l2.936-1.02a.442.442 0 1 1 .29.837zm-1.384-2.662a.44.44 0 0 1-.603-.165.44.44 0 0 1 .166-.603l2.783-1.596a.44.44 0 0 1 .602.166.44.44 0 0 1-.165.602z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                </i> Product Promotion
+                            </a>
+                            <a href="/account-settings/">
+                                <i class="svg-icon setting">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+                                        <g clip-path="url(#a)">
+                                            <path fill="#000"
+                                                d="M17 8.492C17 3.804 13.192 0 8.5 0S0 3.804 0 8.492a8.5 8.5 0 0 0 3.009 6.47c.017.017.034.017.034.034.153.12.306.238.476.357.085.051.153.118.238.186A8.5 8.5 0 0 0 8.517 17a8.5 8.5 0 0 0 4.76-1.46c.085-.052.153-.119.238-.17.153-.119.323-.238.476-.357.017-.017.034-.017.034-.034C15.827 13.4 17 11.073 17 8.492M8.5 15.93c-1.598 0-3.06-.51-4.267-1.359.017-.136.051-.27.085-.407.102-.368.25-.722.442-1.053.187-.323.408-.612.68-.867.255-.255.561-.492.867-.679a4.459 4.459 0 0 1 2.193-.577 4.44 4.44 0 0 1 3.111 1.24q.586.585.918 1.375.178.46.255.968a7.47 7.47 0 0 1-4.284 1.36M5.899 8.068a2.7 2.7 0 0 1-.221-1.088c0-.373.068-.747.221-1.087s.357-.645.612-.9.561-.458.901-.611.714-.221 1.088-.221c.391 0 .748.068 1.088.22.34.154.646.358.901.612.255.255.459.56.612.9s.221.714.221 1.087c0 .39-.068.748-.221 1.086-.147.336-.354.641-.612.901-.26.258-.566.465-.901.611a2.9 2.9 0 0 1-2.193 0 3 3 0 0 1-.901-.61 2.65 2.65 0 0 1-.595-.9m7.888 5.637c0-.034-.017-.05-.017-.085a5.5 5.5 0 0 0-.731-1.494 5.2 5.2 0 0 0-1.156-1.206 5.5 5.5 0 0 0-1.105-.646q.268-.178.493-.407.381-.377.663-.833c.378-.618.572-1.33.561-2.054a3.9 3.9 0 0 0-.306-1.562 4 4 0 0 0-.867-1.274c-.368-.36-.8-.649-1.275-.85a3.9 3.9 0 0 0-1.564-.305 3.9 3.9 0 0 0-1.564.306c-.48.199-.913.494-1.275.866-.362.366-.65.799-.85 1.274a3.9 3.9 0 0 0-.306 1.562q0 .56.153 1.07c.102.357.238.68.425.984.17.306.408.578.663.833q.23.23.51.407a5.3 5.3 0 0 0-1.105.663c-.442.34-.833.747-1.156 1.19-.32.456-.567.96-.731 1.493-.017.034-.017.068-.017.085-1.343-1.359-2.176-3.193-2.176-5.23 0-4.093 3.349-7.44 7.446-7.44s7.446 3.347 7.446 7.44a7.4 7.4 0 0 1-2.159 5.213">
+                                            </path>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="a">
+                                                <path fill="#fff" d="M0 0h17v17H0z"></path>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </i> Account Settings
+                            </a>
+                    
+                            <a href="/my-favourites/">
+                                <i class="svg-icon setting">
+                                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                                </i> My Favourites
+                            </a>
+                    
+                            &nbsp; &nbsp;<a href="/?user-action=logout">
+                                &nbsp; &nbsp; &nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i> Logout
+                            </a>
+                    
+                            <!-- Support Card -->
+                            <div class="support-card mt-auto">
+                                <div class="support-card-pro-header d-flex">
+                                    <img src="https://thebullysupply.com/wp-content/uploads/2024/11/vender-pro-img.png" class="sidbar-vender-pro-img"
+                                        alt="Support Icon">
+                                    <div class="vender-pro">
+                                        <span class="vender-title">The Bully Supply</span>
+                                        <span class="vender-name">Admin</span>
+                                    </div>
+                                </div>
+                    
+                                <a href="/contact-us/" class="button" target="_blank">Contact Support</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content-class">
+
+                        <div class="ruk-new-create-listing-sec">
+                            <div class="dashboard">                        
+                            <section class="ruk-dogs-list-sec my-favourites-section">
+                                <div class="ruk-bully-container">
+                                    <div class="dog-listing-heading remo-ex-space">
+                                        <h2 class="text-uppercase fw-bold">My Favourites</h2>
+                                    </div>
+                                <div class="my-favourites-lits">
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row g-4 ruk-dog-card-row row-firs-space">
+                                        <i class="fa fa-angle-left slick-arrow"></i>
+                                        <div class="dog-list-col">
+                                            <div class="dog-card">
+                                                <a href="#" class="box-link" tabindex="-1">
+                                                    <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American" class="img-fluid rounded">
+                                                    <span class="heart-icon">
+                                                    </span></a><a class="favourite-button" tabindex="-1">
+                                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="dog-card-body">
+                                                    <h3 class="dog-title scape-line">American</h3>
+                                                    <p class="dog-category scape-line">Category: American Bully</p>
+                                                    <p class="dog-price">$1,111.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                        
+                                        
+                                        
+                                
+                            
+                                </div>
+                            </section>                                
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <div class="banner-lider-item">
-            <div class="main-banner-signle-img safari-height">
-                <img src="https://thebullysupply.com/wp-content/uploads/2024/11/main-home-banner.png" class="large-screen" alt="" />
-                <!-- 				<img src="/wp-content/uploads/2024/11/Website-Main-Banner-Optionh-2-1.png" class="small-screen" alt=""/> 	 -->
-            </div>
-            <div class="main-banner-content">
-                <div class="banner-content">
-                    <h1 class="main-banner-heading">Ready To Give A Bully A Forever Home?</h1>
-                    <p class="bully-banner-text">Join our community of proud bully parents and find you new best friend!
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- 	</div> -->
+        </div>    
     </section>
-    <!-- ================================== -->
-    <!-- Category Section -->
-    <!-- ================================== -->
-    <section class="ruk-bully-container">
-        <div class="cta-heading-dve">			 
-            <h2 class="cta-heading">Explore Popular Categories</h2>			 
-        </div>
-       <div class="category-card-row">
-           <div class="ruk-col-md-3"><div class="category-card cta-card-1">
-                   <div class="circle-overlay red"></div>
-                   <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"><h3 class="category-title"> Bullies</h3></a>
-               </div>
-           </div>
-           <div class="ruk-col-md-3">
-               <div class="category-card cta-card-2">
-                   <div class="circle-overlay blue"></div>
-                   <a href="https://thebullysupply.com/category/?search_supplies_category=supplies_categories"><h3 class="category-title">Supplies</h3></a>
-               </div>
-           </div>
-           <div class="ruk-col-md-3">
-               <div class="category-card cta-card-3">
-                   <div class="circle-overlay red"></div>
-                   <a href="https://thebullysupply.com/category/?search_care_services=care_services"><h3 class="category-title">Care &amp; Services</h3></a>
-               </div>
-           </div>
-           <div class="ruk-col-md-3">
-               <div class="category-card cta-card-4">
-                   <div class="circle-overlay blue"></div>
-                   <a href="https://thebullysupply.com/category/?search_food_and_supplement=food_and_supplement"><h3 class="category-title">Food &amp; Supplements</h3></a>
-               </div>
-           </div>
-       </div>
-   </section>
-   <!-- ====================================== -->
-   <!-- Dog Listings Section 1-->
-   <!-- ====================================== -->
-   <section class="ruk-dogs-list-sec">
-    <div class="ruk-bully-container">
-        <div class="dog-listing-heading remo-ex-space">
-            <h2 class="text-uppercase fw-bold">Take a Look at Some of Our Bullies <span class="bully-q-mark"><small>?
-                        <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the</p>
-                        </div></small> </span></h2>
-            <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"
-                class="text-dark text-decoration-none fw-semibold">See All</a>
-        </div>
-        <div class="row g-4 ruk-dog-card-row row-firs-space">
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569489_IMG_2167.jpeg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1734547227_american-bulldog-5.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-    </div>
-   </section>
-
-   <!-- ====================================== -->
-   <!-- Dog Listings Section 2-->
-   <!-- ====================================== -->
-   <section class="ruk-dogs-list-sec">
-    <div class="ruk-bully-container">
-        <div class="dog-listing-heading remo-ex-space">
-            <h2 class="text-uppercase fw-bold">Take a look at some of our featured products <span class="bully-q-mark"><small>?
-                        <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the</p>
-                        </div></small> </span></h2>
-            <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"
-                class="text-dark text-decoration-none fw-semibold">See All</a>
-        </div>
-        <div class="row g-4 ruk-dog-card-row row-firs-space">
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569489_IMG_2167.jpeg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1734547227_american-bulldog-5.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-    </div>
-   </section>
-   <!-- ====================================== -->
-   <!-- Dog Listings Section 3-->
-   <!-- ====================================== -->
-   <section class="ruk-dogs-list-sec">
-    <div class="ruk-bully-container">
-        <div class="dog-listing-heading remo-ex-space">
-            <h2 class="text-uppercase fw-bold">Take a look at some of our featured products <span class="bully-q-mark"><small>?
-                        <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the</p>
-                        </div></small> </span></h2>
-            <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"
-                class="text-dark text-decoration-none fw-semibold">See All</a>
-        </div>
-        <div class="row g-4 ruk-dog-card-row row-firs-space">
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569489_IMG_2167.jpeg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1734547227_american-bulldog-5.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-    </div>
-   </section>
-   <!-- ====================================== -->
-   <!-- Shop Section-->
-   <!-- ====================================== -->
-  <section class="bully-shop-home">
-    <div class="ruk-bully-container">
-        <div class="row shops-section">
-            <div class="show-heading">
-                <h2>SHOPS <span class="bully-q-mark"><small>? <div class="tooltip">
-                                <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                    Ipsum has been the</p>
-                            </div></small> </span></h2>
-            </div>
-            <div class="shop-banner-listing">
-                <div class="ruk-col shop">
-                    <div class="shop-card-content">
-                        <div class="shop-heading">
-                            <h1>Exciting News</h1>
-                            <p>
-                                More food stores are joining the pack! Stay tuned for fresh
-                                choices
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ruk-col shop shop-center-banner">
-                    <div class="shop-card-content">
-                        <div class="shop-heading">
-                            <h1>Welcome To The Bully Supply Store!</h1>
-                            <p>
-                                Sniff out the perfect food for your pup’s happy, healthy life!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ruk-col shop">
-                    <div class="shop-card-content">
-                        <div class="shop-heading">
-                            <h1>Want The Spotlight?</h1>
-                            <p>
-                                Feature your store here for the ultimate bully community
-                                exposure!
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-   <!-- ====================================== -->
-   <!-- Dog Listings Section 4-->
-   <!-- ====================================== -->
-   <section class="ruk-dogs-list-sec">
-    <div class="ruk-bully-container">
-        <div class="dog-listing-heading remo-ex-space">
-            <h2 class="text-uppercase fw-bold">Recently added<span class="bully-q-mark"><small>?
-                        <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the</p>
-                        </div></small> </span></h2>
-            <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"
-                class="text-dark text-decoration-none fw-semibold">See All</a>
-        </div>
-        <div class="row g-4 ruk-dog-card-row row-firs-space">
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569489_IMG_2167.jpeg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1734547227_american-bulldog-5.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-    </div>
-   </section>
-   <!-- ============================================= -->
-   <!-- want top spot section -->
-   <!-- ============================================= -->
-   <div class="ruk-bully-container">	
-	<section class="bully-main-banner ruk-bull-banner-3">
-		<div class="main-banner-signle-img">	
-		<img src="https://thebullysupply.com/wp-content/uploads/2024/11/Background544456-1.jpg" class="lage-de-img" alt=""> 
-		<img src="https://thebullysupply.com/wp-content/uploads/2024/11/Main-Banner-441-2.png" class="small-de-img" alt=""> 	
-		</div>				
-		<div class="main-banner-content">	
-			<div class="banner-content">
-				<h1 class="main-banner-heading">Want Top Spot?</h1>
-				<p class="bully-banner-text">Lead The Pack &amp; Feature your product Here!</p>
-				<a href="#" class="banner-link">Get Featured</a>
-			</div>
-		</div>					
-	</section>		
-    </div>
-   <!-- ====================================== -->
-   <!-- Dog Listings Section 5-->
-   <!-- ====================================== -->
-   <section class="ruk-dogs-list-sec">
-    <div class="ruk-bully-container">
-        <div class="dog-listing-heading remo-ex-space">
-            <h2 class="text-uppercase fw-bold">Take a look at some of our Supplies<span class="bully-q-mark"><small>?
-                        <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the</p>
-                        </div></small> </span></h2>
-            <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"
-                class="text-dark text-decoration-none fw-semibold">See All</a>
-        </div>
-        <div class="row g-4 ruk-dog-card-row row-firs-space">
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569489_IMG_2167.jpeg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1734547227_american-bulldog-5.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-    </div>
-   </section>
-   <!-- ====================================== -->
-   <!-- Care And services 6-->
-   <!-- ====================================== -->
-   <section class="ruk-dogs-list-sec">
-    <div class="ruk-bully-container">
-        <div class="dog-listing-heading remo-ex-space">
-            <h2 class="text-uppercase fw-bold">Care And services<span class="bully-q-mark"><small>?
-                        <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the</p>
-                        </div></small> </span></h2>
-            <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"
-                class="text-dark text-decoration-none fw-semibold">See All</a>
-        </div>
-        <div class="row g-4 ruk-dog-card-row row-firs-space">
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569489_IMG_2167.jpeg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1734547227_american-bulldog-5.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-    </div>
-   </section>
-   <!-- ====================================== -->
-   <!-- Home page banner 2 Section -->
-   <!-- ====================================== -->
-   <section class="home-banner-2">
-    <div class="ruk-bully-container">
-		<div class="bully-care-and-service">
-			<div class="bully-dog">
-			  <div class="bully-dog-heading">
-				<h1>Care You Can Count On!</h1>
-				<p>
-				  Explore top grooming, Training and Health services for your Bully
-				</p>
-			  </div>
-			</div>
-
-			<div class="bully-dog1">
-			  <div class="bully-dog-heading1">
-				<h1>Give A Bully A Loving Home</h1>
-				<p>
-				  They Will return the love unconditionally. Adopt today and make
-				  the difference.
-				</p>
-			  </div>
-			</div>
-		</div>
-
-	</div>
-   </section>
-   <!-- ====================================== -->
-   <!-- Dog Listings Section 6-->
-   <!-- ====================================== -->
-   <section class="ruk-dogs-list-sec">
-    <div class="ruk-bully-container">
-        <div class="dog-listing-heading remo-ex-space">
-            <h2 class="text-uppercase fw-bold">Food And Supplements<span class="bully-q-mark"><small>?
-                        <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the</p>
-                        </div></small> </span></h2>
-            <a href="https://thebullysupply.com/category/?search_sub_category=Bullies"
-                class="text-dark text-decoration-none fw-semibold">See All</a>
-        </div>
-        <div class="row g-4 ruk-dog-card-row row-firs-space">
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1732303573_9pip1oohtsh91.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569489_IMG_2167.jpeg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1734547227_american-bulldog-5.jpg" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dog-list-col">
-                <div class="dog-card"><a href="#" class="box-link">
-                        <img src="https://thebullysupply.com/wp-content/themes/amtopm-child/uploaded/listing/1716569765_GDS%20TX%20XL%20BULLY%20APOLLO%20STUD%20(1)%201.png" alt="American"
-                            class="img-fluid rounded">
-                        <span class="heart-icon">
-                        </span></a><a class="favourite-button">
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                    </a>
-                    <div class="dog-card-body">
-                        <h3 class="dog-title scape-line">American</h3>
-                        <p class="dog-category scape-line">Category: American Bully</p>
-                        <p class="dog-price">$1,111.00</p>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-
-    </div>
-   </section>
-   <!-- =================================== -->
-   <!-- Instagram Post List Section -->
-   <!-- =================================== -->
-
-   <!-- =================================== -->
-   <!-- Blogs Section -->
-   <!-- =================================== -->
-
-<section class="thebully-blog-page">
-    <div class="ruk-bully-container">
-        <div class="bully-blog-main-heading">
-            <h2 class="buly-heading">Useful pet knowledge <span class="bully-q-mark"><small>? <div class="tooltip">
-                            <p>Lorem Ipsum is simply dummy text of the printing and <br>typesetting industry. Lorem
-                                Ipsum has been the </p>
-                        </div></small></span></h2>
-        </div>
-        <div class="list-blog-post">
-            <!-- blog post -->
-            <div class="blog-post-dev">
-                <div class="img-dv">
-                    <a href="#">
-                        <img src="https://thebullysupply.com/wp-content/uploads/2024/05/Picture1-24-300x245.png" class="blog-post-img wp-post-image" alt=""> 
-                    </a>
-                </div>
-                <div class="blog-content">
-                    <h2 class="blog-post-heading"> <a href="#" class="post-tile">Spotlight on Rescues: Success Stories of Bully Breeds</a> </h2>
-                    <p>In the world of dog rescue and rehabilitation, bully breeds often face the hardest
-                        challenges due to misconceptions and biases....</p>
-                </div>
-            </div>
-            <!-- blog post -->
-            <div class="blog-post-dev">
-                <div class="img-dv">
-                    <a href="#">
-                        <img src="https://thebullysupply.com/wp-content/uploads/2024/05/Picture1-24-300x245.png" class="blog-post-img wp-post-image" alt=""> 
-                    </a>
-                </div>
-                <div class="blog-content">
-                    <h2 class="blog-post-heading"> <a href="#" class="post-tile">Spotlight on Rescues: Success Stories of Bully Breeds</a> </h2>
-                    <p>In the world of dog rescue and rehabilitation, bully breeds often face the hardest
-                        challenges due to misconceptions and biases....</p>
-                </div>
-            </div>
-            <!-- blog post -->
-            <div class="blog-post-dev">
-                <div class="img-dv">
-                    <a href="#">
-                        <img src="https://thebullysupply.com/wp-content/uploads/2024/05/Picture1-24-300x245.png" class="blog-post-img wp-post-image" alt=""> 
-                    </a>
-                </div>
-                <div class="blog-content">
-                    <h2 class="blog-post-heading"> <a href="#" class="post-tile">Spotlight on Rescues: Success Stories of Bully Breeds</a> </h2>
-                    <p>In the world of dog rescue and rehabilitation, bully breeds often face the hardest
-                        challenges due to misconceptions and biases....</p>
-                </div>
-            </div>
-            <!-- blog post -->
-            <div class="blog-post-dev">
-                <div class="img-dv">
-                    <a href="#">
-                        <img src="https://thebullysupply.com/wp-content/uploads/2024/05/Picture1-24-300x245.png" class="blog-post-img wp-post-image" alt=""> 
-                    </a>
-                </div>
-                <div class="blog-content">
-                    <h2 class="blog-post-heading"> <a href="#" class="post-tile">Spotlight on Rescues: Success Stories of Bully Breeds</a> </h2>
-                    <p>In the world of dog rescue and rehabilitation, bully breeds often face the hardest
-                        challenges due to misconceptions and biases....</p>
-                </div>
-            </div>
-            <!-- blog post -->
-            <div class="blog-post-dev">
-                <div class="img-dv">
-                    <a href="#">
-                        <img src="https://thebullysupply.com/wp-content/uploads/2024/05/Picture1-24-300x245.png" class="blog-post-img wp-post-image" alt=""> 
-                    </a>
-                </div>
-                <div class="blog-content">
-                    <h2 class="blog-post-heading"> <a href="#" class="post-tile">Spotlight on Rescues: Success Stories of Bully Breeds</a> </h2>
-                    <p>In the world of dog rescue and rehabilitation, bully breeds often face the hardest
-                        challenges due to misconceptions and biases....</p>
-                </div>
-            </div>
 
 
-        </div>
-    </div>
-</section>
 
 <!-- ========================================== -->
 <!-- Footer Area-->
@@ -2849,119 +2247,6 @@
     
 </section>
 
-
-
-<!-- login & register popup	 -->
-<section class="ruk-register-form">
-    <div id="register-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-			
-			<!-- Modal Popup for Register Form -->
-            <div class="container" id="signup-container" style="display: none;">
-                <div class="logo">
-                    <img src="https://thebullysupply.com/wp-content/uploads/2024/11/image-43.png" alt="The Bally Supply Logo">
-                </div>
-                <h2>Sign Up</h2>
-                <p class="description">Ready to become part of the exclusive club? Fill in the details below, and let the journey begin!</p>
-				
-				<span class="error-msg register-error-msg"></span>
-				<span class="success-msg register-success-msg"></span>
-                
-         
-				<form name="signup" class="register-form" method="POST" enctype="multipart/form-data">
-					<div class="form-group">
-						<input type="text" id="fullname" name="fullname" placeholder="Full Name" required>
-						<span class="formError" id="fullnameError"></span>
-					</div>
-					<div class="form-group">
-						<input type="email" id="email" name="email" placeholder="Email Address" required>
-						<span class="formError" id="emailError"></span>
-					</div>
-					<div class="form-group">
-						<input type="password" id="password" name="password" placeholder="Password" required>
-						<span class="formError" id="passwordError"></span>
-						<span class="toggle-password" onclick="togglePassword('password')">
-							<i class="fa fa-eye-slash" aria-hidden="true"></i>
-						</span>						
-					</div>
-					<div class="form-group">
-						<input type="password" id="confirm-password" name="confirmPassword" placeholder="Confirm Password" required>
-						<span class="formError" id="confirmPasswordError"></span>
-						<span class="toggle-password" onclick="togglePassword('confirm-password')">
-							<i class="fa fa-eye-slash" aria-hidden="true"></i>
-						</span>						
-					</div>
-					<button type="submit" name="signup" class="btn" id="signup-btn">
-						<span>Sign Up</span>
-						<span class="spinner" style="display: none;"></span>
-					</button>
-				</form>
-
-
-<!--                 <div class="or-divider">or</div>
-
-                <div class="social-buttons">
-                    <button class="social-btn google"><img src="/wp-content/uploads/2024/10/google-icon-1.png" alt="google"/></button>
-                    <button class="social-btn facebook"><img src="/wp-content/uploads/2024/10/facebook-icon-1.png" alt="facebook"/></button>
-                    <button class="social-btn apple"><img src="/wp-content/uploads/2024/10/app-icon-1.png" alt="apple"/></button>
-                </div>
- -->
-                <p class="footer-text">
-                    Already have an account? <a href="#" id="show-login">Sign in</a>
-                </p>
-            </div>
-			
-			
-			<div class="container" id="login-container">
-				<div class="logo">
-					<img src="https://thebullysupply.com/wp-content/uploads/2024/11/image-43.png" alt="The Bally Supply Logo">
-				</div>
-				<h2>Sign In</h2>
-				<p class="description">Ready to become part of the exclusive club? Fill in the details below, and let the journey begin!</p>
-
-				<span class="error-msg login-error-msg" style="color: red;"></span>
-				<span class="success-msg login-success-msg" style="color: green;"></span>
-
-				<form name="login" method="post" action="" class="formValidationQuery login-form">
-					<input type="hidden" id="toPostnAdd" name="toPostnAdd" value="" />
-					<div class="form-group">
-						<input type="email" id="youremail" name="youremail" placeholder="Email Address" value="" required />
-						<span class="formError" id="youremailError"></span>
-					</div>
-					<div class="form-group">
-						<input type="password" id="loginPassword" name="password" placeholder="Password" value="" required />
-						<span class="toggle-password" onclick="togglePassword('loginPassword')">
-							<i class="fa fa-eye-slash" aria-hidden="true"></i>
-						</span>
-						<span class="formError" id="loginPasswordError"></span>
-					</div>
-					<button type="submit" name="login" class="btn" id="login-btn">
-						<span>Sign In</span>
-						<span class="spinner" style="display: none;"></span>
-					</button>
-				</form>
-
-<!-- 				<div class="or-divider">or</div>
-
-				<div class="social-buttons">
-					<button class="social-btn google"><img src="/wp-content/uploads/2024/10/google-icon-1.png" alt="google"/></button>
-					<button class="social-btn facebook"><img src="/wp-content/uploads/2024/10/facebook-icon-1.png" alt="facebook"/></button>
-					<button class="social-btn apple"><img src="/wp-content/uploads/2024/10/app-icon-1.png" alt="apple"/></button>
-				</div> -->
-
-				<p class="footer-text">
-					Don't have an account? <a href="#" id="show-signup">Register</a>
-				</p>
-			</div>
-
-        </div>
-    </div>
-</section>
-<!-- login & register popup	 -->
-
-
-
 <footer class="footer">
 	<div class="container-footer">
     <div class="footer-links">
@@ -3029,1055 +2314,17 @@
     </div>
 </footer>
 
-
-
-
-<script>
-
-// const openModal = document.getElementById("open-modal");
-
-// if (openModal) {
-//     openModal.addEventListener("click", function (e) {
-//         alert('OK');
-//     });
-// } else {
-//     console.error("Element with id 'open-modal' not found.");
-// }
-
-
-    // const openModal = document.getElementById("openModal");
-    // openModal.addEventListener("click", function (e) {
-    //     alert('OK');    
-    //     // if (modal && e.target === modal) {
-    //         //     modal.style.display = "none";
-    //         // }
-    //     });
-    
-    // document.addEventListener("DOMContentLoaded", function () {
-    // 		console.log('test1');
-    //     const modal = document.getElementById("register-modal");
-    // 		console.log(modal);
-    //     const openModal = document.getElementById("open-modal");
-    //     const sellModal = document.getElementById("sell-modal");
-    //     const sellModal2 = document.getElementById("sell-modal2");
-    //     const closeModal = document.querySelector(".close");
-    
-    
-    //     // Add event listeners if elements exist
-    //     if (openModal) openModal.addEventListener("click", showModal);
-    //     if (sellModal) sellModal.addEventListener("click", showModal);
-    //     if (sellModal2) sellModal2.addEventListener("click", showModal);
-    
-    //         // Function to show modal
-    //         const showModal = (e) => {    
-    //         e.preventDefault();
-    //         if (modal) {
-    //             console.log("Opening modal");
-    //             modal.style.display = "flex"; // Show modal as flex
-    //         }
-    //     };
-    
-    //     // Close modal when 'x' is clicked
-    //     if (closeModal) {
-    //         closeModal.addEventListener("click", function () {
-    //             if (modal) modal.style.display = "none";
-    //         });
-    //     }
-    
-    //     // Close modal if clicking outside the modal content
-    //     window.addEventListener("click", function (e) {
-    //         if (modal && e.target === modal) {
-    //             modal.style.display = "none";
-    //         }
-    //     });
-    
-    
-    // });
-    
-    
-    
-    </script>
-
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script> -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
-
+	
 <script>
-
-// // Select the "All Categories" link and the dropdown menu
-const allCategoriesLink = document.querySelector('.header-all-categories');
-const categoriesDropdown = document.querySelector('.header-categories-dropdown');
-
-// Function to show and hide menus
-function showMenu(menu) {
-  menu.style.display = 'block';
-}
-
-//.bully .sub-menu
- 	
-function hideMenu(menu) {
-  menu.style.display = 'none';
-}
-
-// Toggle the dropdown when clicking "All Categories"
-allCategoriesLink.addEventListener('click', (e) => {
-// 	alert('test');
-  e.preventDefault();
-  const isDropdownVisible = categoriesDropdown.style.display === 'block';
-  if (isDropdownVisible) {
-    hideMenu(categoriesDropdown);
-  } else {
-    showMenu(categoriesDropdown);
-	
-    // Only show sub-menu and sub-sub-menu for the first category
-    const firstCategoryItem = categoriesDropdown.querySelector('.category-item');
-    if (firstCategoryItem) {
-      const firstSubMenu = firstCategoryItem.querySelector('.sub-menu');
-      if (firstSubMenu) {
-        showMenu(firstSubMenu);
-
-        // Show sub-sub-menu items within the first sub-menu
-        firstSubMenu.querySelectorAll('.sub-sub-menu').forEach(subSubMenu => {
-          showMenu(subSubMenu);
-        });
-      }
-    }	  	  	  
-	  
-  }
-});
-
-// Close the mega menu when clicking outside of it
-document.addEventListener('click', (e) => {
-  if (!categoriesDropdown.contains(e.target) && e.target !== allCategoriesLink) {
-    hideMenu(categoriesDropdown);
-  }
-});	
-
-const categoryItems = document.querySelectorAll('.category-item');
-
-	
-// Show sub-menu for the first category item with both sub and sub-sub categories
-const firstCategoryItem = categoryItems[0];
-const remainingCategoryItems = Array.from(categoryItems).slice(1); // Get all except the first
-
-if (firstCategoryItem) {
-  const firstChildMenu = firstCategoryItem.querySelector('.sub-menu');
-
-  // Handle first category with sub and sub-sub-menus
-  firstCategoryItem.addEventListener('mouseenter', () => {
-    if (firstChildMenu) showMenu(firstChildMenu);
-  });
-
-  firstCategoryItem.addEventListener('mouseleave', (event) => {
-    if (firstChildMenu && !firstCategoryItem.contains(event.relatedTarget)) {
-      hideMenu(firstChildMenu);
-    }
-	  
-  });
-
-  // Handle sub-sub-menu for first category's sub-category items
-  const firstSubCategoryItems = firstCategoryItem.querySelectorAll('.sub-category-item');
-  firstSubCategoryItems.forEach(subCategory => {
-    const subChildMenu = subCategory.querySelector('.sub-sub-menu');
-    
-    subCategory.addEventListener('mouseenter', () => {
-      if (subChildMenu) showMenu(subChildMenu);
-    });
-
-    subCategory.addEventListener('mouseleave', (event) => {
-      if (subChildMenu && !subCategory.contains(event.relatedTarget)) {
-        hideMenu(subChildMenu);
-      }
-    });
-  });
-}
-
-	
-// For remaining categories, only display sub-menus
-remainingCategoryItems.forEach(category => {
-  const childMenu = category.querySelector('.sub-menu');
-  
-  category.addEventListener('mouseenter', () => {
-    if (childMenu) showMenu(childMenu);
-  });
-
-  category.addEventListener('mouseleave', (event) => {
-    if (childMenu && !category.contains(event.relatedTarget)) {
-      hideMenu(childMenu);
-    }
-  });
-});
-
-// Functions to show and hide menus
-function showMenu(menu) {
-  menu.style.display = 'block';
-}
-
-function hideMenu(menu) {
-  menu.style.display = 'none';
-}
-	
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const modal = document.getElementById("register-modal");
-    const modalTriggers = ["open-modal", "sell-modal", "sell-modal2"];
-
-    modalTriggers.forEach(id => {
-        const element = document.getElementById(id);
-        if (element) {
-            element.addEventListener("click", showModal);
-        } else {
-            console.error(`Element with id '${id}' not found.`);
-        }
-    });
-
-    function showModal(e) {
-        e.preventDefault();
-        if (modal) {
-            console.log("Opening modal");
-            modal.style.display = "flex"; // Show modal as flex
-        } else {
-            console.error("Modal element not found.");
-        }
-    }
-});
-
-
-
-document.getElementById('show-signup').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('login-container').style.display = 'none';
-    document.getElementById('signup-container').style.display = 'block';
-});
-
-document.getElementById('show-login').addEventListener('click', function(event) {
-    event.preventDefault();
-    document.getElementById('signup-container').style.display = 'none';
-    document.getElementById('login-container').style.display = 'block';
-});
-
-
-		
-// Close modal when the close button is clicked
-$('.close').on('click', function() {
-    $('#register-modal').hide();
-    $('#register-alert').hide(); // Hide alert when modal is closed
-});
-	
-	
-	$(document).ready(function() {
-    // Re-initialize dropdowns
-    $('#navbarDropdown').dropdown();
-});
-	
-
-
-$(document).ready(function(){	
-        $('.ruk-dog-card-row').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            arrows: true,
-			nextArrow: '<i class="fa fa-angle-right"></i>',
-		    prevArrow: '<i class="fa fa-angle-left"></i>',
-			dots: false,
-			 responsive: [                
-				{
-                    breakpoint: 1124,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-	
-	   $('.shop-banner-listing').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows: false,
-			dots: false,
-			 responsive: [                
-				{
-                    breakpoint: 1124,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },				 
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });	
-	
-		$('.bully-home-top-banner').slick({
-            autoplay: true,
-            autoplaySpeed: 5000,
-            arrows: false,
-			dots: true,			
-		});
-	
-    });	
-	
-	   $('.list-blog-post').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: false,
-            autoplaySpeed: 2000,
-            arrows: false,
-			dots: false,
-			 responsive: [                
-				{
-                    breakpoint: 1124,
-                    settings: {
-                        slidesToShow: 3
-                    }
-                },				 
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });	
-	
-
-
-
-// jQuery(document).ready(function ($) {
-//     $('#signup-btn').on('click', function (event) {
-//         event.preventDefault();
-
-//         const signUpBtn = $('#signup-btn');
-//         const spinner = signUpBtn.find('.spinner');
-//         let isValid = true;
-		
-
-//         isValid = validateField('#fullname', '#fullnameError', 'Enter your name') && isValid;
-//         isValid = validateField('#email', '#emailError', 'Enter a valid email') && isValid;
-//         isValid = validatePasswords() && isValid;
-
-//         if (!isValid) return false;
-
-//         spinner.show();
-// 		signUpBtn.disabled = true;
-//         $.ajax({
-//             type: 'POST',
-//             url: ajax_object.ajax_url,
-//             data: {
-//                 action: 'handle_registration',
-//                 nonce: ajax_object.nonce,
-//                 fullname: $('#fullname').val(),
-//                 email: $('#email').val(),
-//                 password: $('#password').val(),
-//                 confirmPassword: $('#confirm-password').val()
-//             },
-//             dataType: 'json',
-//             success: function (response) {
-//                 spinner.hide();
-
-//                 if (response.success) {
-// 					 $('.register-form')[0].reset();
-// 					signUpBtn.disabled = false;
-					
-// 					swal({
-// 						title: 'Registration Successful',
-// 						text: response.data.successMessage,
-// 						icon: 'success',
-// 					}).then(() => {
-// 						window.location.href = response.data.redirect;
-// 					});
-//                 } else {
-// 					swal({
-// 						title: 'Registration Failed',
-// 						text: response.data.errorMessage,
-// 						icon: 'error',
-// 					});
-// 					signUpBtn.disabled = false;
-//                 }
-//             },
-//             error: function () {
-//                 spinner.hide();
-//                 swal('Something went wrong!', 'Please try again later.', 'error');
-// 				signUpBtn.disabled = false;
-//             }
-//         });
-//     });
-// });
-
-
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-
-// // Attach click event to the cta-label label
-//   const ctaLabel = document.querySelector('.cta-label');
-//   ctaLabel.addEventListener("click", function () {
-// //   alert('OK');
-//     const ctaGroup = document.querySelector('.cta-195');
-//     ctaGroup.classList.toggle('open');
-//  });
-
-
-// // Attach click event to the location label
-//   const locationLabel = document.querySelector('.location-label');
-//   locationLabel.addEventListener("click", function () {
-//   //alert('OK');
-//     const locationGroup = document.querySelector('.location-filter');
-//     locationGroup.classList.toggle('open');
-//  });
-
-
-//   // Attach click event to the gender label
-//   const genderLabel = document.getElementById("genderLabel");
-//   genderLabel.addEventListener("click", function () {
-//   //alert('OK');
-//     const genderGroup = document.querySelector('.gender-group');
-//     genderGroup.classList.toggle('open');
-//  });
-  
-//   // Attach click event to the price label
-//   const priceLabel = document.querySelector('.price');
-//   priceLabel.addEventListener("click", function () {
-//   //alert('OK');
-//     const priceGroup = document.querySelector('.filter-price');
-//     priceGroup.classList.toggle('down');
-//  });
-  
-// // Attach click event to the age label
-//   const ageLabel = document.querySelector('.age');
-//   ageLabel.addEventListener("click", function () {
-//   //alert('OK');
-//     const ageGroup = document.querySelector('.filter-age');
-//     ageGroup.classList.toggle('down');
-//  });
- 
- 
-// });    
-	
-// 	        $('.back-link').on('click', function() {
-//             // 	console.log('test');
-//             var subSubMenu = this.closest('.sub-sub-menu');
-//             if (subSubMenu) {
-//                 subSubMenu.style.display = 'none';
-//             }
-//         });
-
-//         $('.sub-back-link').on('click', function() {
-//             var SubMenu = this.closest('.sub-menu');
-//             if (SubMenu) {
-//                 SubMenu.style.display = 'none';
-//             }
-//             // Hide alert when modal is closed
-//         });
-	
-	
-// document.addEventListener("DOMContentLoaded", function () {
-//     const loginForm = document.querySelector(".login-form");
-//     const loginBtn = document.getElementById("login-btn");
-//     const spinner = loginBtn.querySelector(".spinner");
-//     const errorMsg = document.querySelector(".login-error-msg");
-//     const successMsg = document.querySelector(".login-success-msg");
-//     const ajaxUrl = "<?php echo admin_url('admin-ajax.php'); ?>";
-
-//     loginForm.addEventListener("submit", function (e) {
-//         e.preventDefault();
-		
-// 	    loginBtn.disabled = true;
-//     	spinner.style.display = "inline-block";
-
-//         const formData = new FormData(loginForm);
-//         formData.append("action", "user_login");
-
-//         // Clear messages
-//         errorMsg.textContent = "";
-//         successMsg.textContent = "";
-
-//         // Show loading spinner
-//         spinner.style.display = "inline-block";
-
-//         fetch(ajaxUrl, {
-//             method: "POST",
-//             body: formData,
-//         })
-//             .then((response) => response.json())
-//             .then((result) => {
-//                 spinner.style.display = "none";
-			
-// 				console.log('result', result);
-
-//                 if (result.success) {
-//                     successMsg.textContent = "Login successful!...";
-//                     setTimeout(() => {
-//                         window.location.href = result.data.redirect;
-//                     }, 1500);
-//                 } else {
-//                     errorMsg.textContent = result.data.message;
-//                 }
-			
-// 				 // Re-enable the button
-// 				loginBtn.disabled = false;
-//             })
-//             .catch((error) => {
-//                 spinner.style.display = "none";
-//                 errorMsg.textContent = "An error occurred. Please try again.";
-//                 console.error("Login error:", error);
-// 				loginBtn.disabled = false;
-//             });
-//     });
-// });
-	
-// 	jQuery(document).ready(function($) {
-// //     setTimeout(function() {
-// //         $('.state1').select2({
-// //             placeholder: 'Locations',
-// //             allowClear: true
-// //         });
-// //     }, 100);
-
-//     const urlParams = new URLSearchParams(window.location.search);
-//     const search = urlParams.get('search');
-//     const state = urlParams.get('state');
-
-//     if (urlParams && search && state) {
-//         fetchSuggestions(search, state);
-//     }
-
-//     let previousSuggestions = [];
-//     let debounceTimer = null;
-//     const cache = new Map(); // Cache to store previous search results
-
-//     // Trigger search suggestions on input with debounce
-//     $('#search-input').on('input', function() {
-// // 		console.log('test');
-//         const search = $(this).val().trim();
-//         const state = $('#state li.selected').data('value');
-
-//         if (search.length > 0) {
-//             if (cache.has(search)) {
-//                 // Use cached results if available
-//                 showSuggestions(cache.get(search));
-//             } else {
-//                 showLoadingIndicator();
-
-//                 clearTimeout(debounceTimer);
-//                 debounceTimer = setTimeout(() => {
-//                     fetchSuggestions(search, state);
-//                 }, 300); // Adjust debounce time as needed
-//             }
-//         } else {
-//             hideSuggestions();
-//         }
-//     });
-
-//     $('#search-input').on('click', function() {
-//         if (previousSuggestions.length > 0) {
-//             showSuggestions(previousSuggestions);
-//         }
-//     });
-
-//     function fetchSuggestions(search, state) {
-//         $.ajax({
-//             url: ajax_object.ajax_url,
-//             method: 'POST',
-//             data: {
-//                 action: 'search_products',
-//                 search: search,
-//                 state: state,
-//                 nonce: ajax_object.nonce
-//             },
-//             success: function(response) {
-//                 hideLoadingIndicator();
-//                 if (response.success) {
-//                     const results = response.data;
-//                     previousSuggestions = results;
-//                     cache.set(search, results); // Cache the results
-//                     showSuggestions(results);
-//                 } else {
-//                     hideSuggestions();
-//                 }
-//             },
-//             error: function() {
-//                 hideLoadingIndicator();
-//                 hideSuggestions();
-//             }
-//         });
-//     }
-
-//     function showLoadingIndicator() {
-//         $('.loading').show();
-//     }
-
-//     function hideLoadingIndicator() {
-//         $('.loading').hide();
-//     }
-
-//     function showSuggestions(products) {
-//         const suggestionsDropdown = $('#suggestions-dropdown');
-//         suggestionsDropdown.empty();
-
-//         products.forEach(product => {
-//             const item = $('<div class="suggestion-item"></div>').text(product.title);
-//             item.on('click', function() {
-//                 $('#search-input').val(product.title);
-//                 suggestionsDropdown.hide();
-//             });
-
-//             suggestionsDropdown.append(item);
-//         });
-
-//         suggestionsDropdown.show();
-//     }
-
-//     function hideSuggestions() {
-//         $('#suggestions-dropdown').hide().empty();
-//     }
-
-//     $(document).on('click', function(event) {
-//         if (!$(event.target).closest('#search-input, #suggestions-dropdown').length) {
-//             hideSuggestions();
-//         }
-//     });
-
-//     $('#search-input, #suggestions-dropdown').on('click', function(event) {
-//         event.stopPropagation();
-//     });
-
-//     $('.search-button').on('click', function() {
-//         const state = $('#state li.selected').data('value');
-//         const s = $('#search-input').val();
-//         const search = encodeURIComponent(s);
-//         const stateParam = state ? `&state=${state}` : '';
-
-//         window.location.href = `/category?search=${search}${stateParam}`;
-//     });
-
-//     $('.category-item > a').on('click', function(event) {
-//         event.preventDefault();
-//         $('.category-item > a p').hide();
-//         $(this).find('p').show();
-//     });
-// });
-
-		
-// // navigation bar stiky
-// $(window).scroll(function(){	       
-// 	if($(this).scrollTop() > 86){
-// 		$('.navbar-sticky-sec').addClass('bully-sticky')
-// 	} else{
-// 		$('.navbar-sticky-sec').removeClass('bully-sticky')
-// 	}
-// });
-// login & register popup
-
-// Function to toggle password visibility
-	function togglePassword(fieldId) {		
-        alert('OK');
-		var input = document.getElementById(fieldId);
-		if (input.type === "password") {
-			input.type = "text";
-		} else {
-			input.type = "password";
-		}
-	}
-		
-
-// $('#sellLink').on('click', function(e) {
-//     e.preventDefault();
-	
-// 	console.log('call');
-
-//     $.ajax({
-//         url: '<?php echo get_stylesheet_directory_uri(); ?>/check_auth.php',
-//         type: 'POST',
-//         success: function(response) {
-//             console.log('Server response:', response);
-
-// 			if (response == 'no') {
-
-// 				  console.log('run:', response);
-// 				// Show the modal and display the register form
-// 				document.getElementById('register-modal').style.display = "flex";
-// 				document.getElementById('login-container').style.display = "block";
-// 				document.getElementById('signup-container').style.display = "none";
-				
-				
-// 				$('#toPostnAdd').val('sell');
-
-// 				// Display alert message
-// 				document.getElementById('alert-message').innerText = "Please login an account first.";
-// 			} else if (response === 'redirect') {
-// 				// Redirect to the 'post an ad' page
-// 				window.location.href = '/post-an-ad/';
-// 			}
-//         }
-//     });
-// });
-
-
-
-// 	document.getElementById('signup-container').style.display = 'none';
-// 	document.getElementById('login-container').style.display = 'block';
-
-// 	document.getElementById('show-login').addEventListener('click', function(event) {
-// 		event.preventDefault();
-// 		document.getElementById('signup-container').style.display = 'none';
-// 		document.getElementById('login-container').style.display = 'block';
-// 	});
-
-// 	document.getElementById('show-signup').addEventListener('click', function(event) {
-// 		event.preventDefault();
-// 		document.getElementById('login-container').style.display = 'none';
-// 		document.getElementById('signup-container').style.display = 'block';
-// 	});
-// // 	document.getElementById('show-signup2').addEventListener('click', function(event) {
-// // 		event.preventDefault();
-// // 		document.getElementById('login-container').style.display = 'none';
-// // 		document.getElementById('signup-container').style.display = 'block';
-// // 	});
-
-// // login & register popup
-	
-// function bullytoggleDropdown() {
-// 	const bullyDropdownContent = document.getElementById('bullyDropdownContent');
-//     bullyDropdownContent.style.display = bullyDropdownContent.style.display === 'block' ? 'none' : 'block';
-// }
-
-// // Function to update the selected country
-// function selectCountry(countryName, countryFlagUrl) {
-//     document.getElementById('selectedCountryName').textContent = countryName;
-//     document.getElementById('selectedCountryFlag').src = countryFlagUrl;
-//     toggleDropdown(); // Close dropdown after selection
-// }
-
-// // Close dropdown if clicking outside of it
-// window.onclick = function(event) {
-//     const dropdown = document.querySelector('.bully-dropdown');
-	
-//     if ((dropdown != null) && (!dropdown.contains(event.target))) {
-//         document.getElementById('bullyDropdownContent').style.display = 'none';
-//     }
-// }	
-	
-// // Select the "All Categories" link and the dropdown menu
-// const allCategoriesLink = document.querySelector('.header-all-categories');
-// const categoriesDropdown = document.querySelector('.header-categories-dropdown');
-
-// // Function to show and hide menus
-// function showMenu(menu) {
-//   menu.style.display = 'block';
-// }
-
-// //.bully .sub-menu
- 	
-// function hideMenu(menu) {
-//   menu.style.display = 'none';
-// }
-
-// // Toggle the dropdown when clicking "All Categories"
-// allCategoriesLink.addEventListener('click', (e) => {
-// // 	alert('test');
-//   e.preventDefault();
-//   const isDropdownVisible = categoriesDropdown.style.display === 'block';
-//   if (isDropdownVisible) {
-//     hideMenu(categoriesDropdown);
-//   } else {
-//     showMenu(categoriesDropdown);
-	
-//     // Only show sub-menu and sub-sub-menu for the first category
-// //     const firstCategoryItem = categoriesDropdown.querySelector('.category-item');
-// //     if (firstCategoryItem) {
-// //       const firstSubMenu = firstCategoryItem.querySelector('.sub-menu');
-// //       if (firstSubMenu) {
-// //         showMenu(firstSubMenu);
-
-// //         // Show sub-sub-menu items within the first sub-menu
-// //         firstSubMenu.querySelectorAll('.sub-sub-menu').forEach(subSubMenu => {
-// //           showMenu(subSubMenu);
-// //         });
-// //       }
-// //     }	  	  	  
-	  
-//   }
-// });
-
-// // Close the mega menu when clicking outside of it
-// document.addEventListener('click', (e) => {
-//   if (!categoriesDropdown.contains(e.target) && e.target !== allCategoriesLink) {
-//     hideMenu(categoriesDropdown);
-//   }
-// });	
-
-// const categoryItems = document.querySelectorAll('.category-item');
-
-	
-// // Show sub-menu for the first category item with both sub and sub-sub categories
-// const firstCategoryItem = categoryItems[0];
-// const remainingCategoryItems = Array.from(categoryItems).slice(1); // Get all except the first
-
-// if (firstCategoryItem) {
-//   const firstChildMenu = firstCategoryItem.querySelector('.sub-menu');
-
-//   // Handle first category with sub and sub-sub-menus
-//   firstCategoryItem.addEventListener('mouseenter', () => {
-//     if (firstChildMenu) showMenu(firstChildMenu);
-//   });
-
-//   firstCategoryItem.addEventListener('mouseleave', (event) => {
-//     if (firstChildMenu && !firstCategoryItem.contains(event.relatedTarget)) {
-//       hideMenu(firstChildMenu);
-//     }
-	  
-//   });
-
-//   // Handle sub-sub-menu for first category's sub-category items
-//   const firstSubCategoryItems = firstCategoryItem.querySelectorAll('.sub-category-item');
-//   firstSubCategoryItems.forEach(subCategory => {
-//     const subChildMenu = subCategory.querySelector('.sub-sub-menu');
-    
-//     subCategory.addEventListener('mouseenter', () => {
-//       if (subChildMenu) showMenu(subChildMenu);
-//     });
-
-//     subCategory.addEventListener('mouseleave', (event) => {
-//       if (subChildMenu && !subCategory.contains(event.relatedTarget)) {
-//         hideMenu(subChildMenu);
-//       }
-//     });
-//   });
-// }
-
-	
-// // For remaining categories, only display sub-menus
-// remainingCategoryItems.forEach(category => {
-//   const childMenu = category.querySelector('.sub-menu');
-  
-//   category.addEventListener('mouseenter', () => {
-//     if (childMenu) showMenu(childMenu);
-//   });
-
-//   category.addEventListener('mouseleave', (event) => {
-//     if (childMenu && !category.contains(event.relatedTarget)) {
-//       hideMenu(childMenu);
-//     }
-//   });
-// });
-
-// // Functions to show and hide menus
-// function showMenu(menu) {
-//   menu.style.display = 'block';
-// }
-
-// function hideMenu(menu) {
-//   menu.style.display = 'none';
-// }
-	
-	
-
-	
-// // Helper function to validate input fields with custom error messages
-// function validateField(selector, errorSelector, customErrorMessage) {
-//     let value = $(selector).val().trim();
-//     let errorField = $(errorSelector);
-//     let isValid = true;
-
-//     if (value === '' || value === null) {
-//         errorField.text(customErrorMessage);  // Show custom error message
-//         isValid = false;
-//     } else {
-//         errorField.text('');
-//     }
-
-//     return isValid;
-// }
-
-// // Validate the password and confirm password match
-// function validatePasswords() {
-//     const password = $('#password').val().trim();
-//     const confirmPassword = $('#confirm-password').val().trim();
-//     const errorField = $('#confirmPasswordError');
-//     let isValid = true;
-
-//     if (password !== confirmPassword) {
-//         errorField.text('Password and Confirm Password do not match.');
-//         isValid = false;
-//     } else {
-//         errorField.text('');
-//     }
-
-//     // Validate password length (at least 8 characters)
-//     if (password.length < 8) {
-//         $('#passwordError').text('Password must be at least 8 characters long.');
-//         isValid = false;
-//     } else {
-//         $('#passwordError').text('');
-//     }
-
-//     return isValid;
-// }
-
-
-
-
-// jQuery(document).ready(function ($) {
-//     $('#signup-btn').on('click', function (event) {
-//         event.preventDefault();
-
-//         const signUpBtn = $('#signup-btn');
-//         const spinner = signUpBtn.find('.spinner');
-//         let isValid = true;
-		
-
-//         isValid = validateField('#fullname', '#fullnameError', 'Enter your name') && isValid;
-//         isValid = validateField('#email', '#emailError', 'Enter a valid email') && isValid;
-//         isValid = validatePasswords() && isValid;
-
-//         if (!isValid) return false;
-
-//         spinner.show();
-// 		signUpBtn.disabled = true;
-//         $.ajax({
-//             type: 'POST',
-//             url: ajax_object.ajax_url,
-//             data: {
-//                 action: 'handle_registration',
-//                 nonce: ajax_object.nonce,
-//                 fullname: $('#fullname').val(),
-//                 email: $('#email').val(),
-//                 password: $('#password').val(),
-//                 confirmPassword: $('#confirm-password').val()
-//             },
-//             dataType: 'json',
-//             success: function (response) {
-//                 spinner.hide();
-
-//                 if (response.success) {
-// 					 $('.register-form')[0].reset();
-// 					signUpBtn.disabled = false;
-					
-// 					swal({
-// 						title: 'Registration Successful',
-// 						text: response.data.successMessage,
-// 						icon: 'success',
-// 					}).then(() => {
-// 						window.location.href = response.data.redirect;
-// 					});
-//                 } else {
-// 					swal({
-// 						title: 'Registration Failed',
-// 						text: response.data.errorMessage,
-// 						icon: 'error',
-// 					});
-// 					signUpBtn.disabled = false;
-//                 }
-//             },
-//             error: function () {
-//                 spinner.hide();
-//                 swal('Something went wrong!', 'Please try again later.', 'error');
-// 				signUpBtn.disabled = false;
-//             }
-//         });
-//     });
-// });
-
-
-		
-// // Close modal when the close button is clicked
-// $('.close').on('click', function() {
-//     $('#register-modal').hide();
-//     $('#register-alert').hide(); // Hide alert when modal is closed
-// });
-	
-	
-// 	$(document).ready(function() {
-//     // Re-initialize dropdowns
-//     $('#navbarDropdown').dropdown();
-// });
-	
-
-
-// 		console.log('test0');
-	
-// 	document.addEventListener("DOMContentLoaded", function () {
-// 		console.log('test1');
-//     const modal = document.getElementById("register-modal");
-// 		console.log(modal);
-//     const openModal = document.getElementById("open-modal");
-//     const sellModal = document.getElementById("sell-modal");
-//     const sellModal2 = document.getElementById("sell-modal2");
-//     const closeModal = document.querySelector(".close");
-
-
-//     // Add event listeners if elements exist
-//     if (openModal) openModal.addEventListener("click", showModal);
-//     if (sellModal) sellModal.addEventListener("click", showModal);
-//     if (sellModal2) sellModal2.addEventListener("click", showModal);
-
-//         // Function to show modal
-//         const showModal = (e) => {    
-//         e.preventDefault();
-//         if (modal) {
-//             console.log("Opening modal");
-//             modal.style.display = "flex"; // Show modal as flex
-//         }
-//     };
-
-//     // Close modal when 'x' is clicked
-//     if (closeModal) {
-//         closeModal.addEventListener("click", function () {
-//             if (modal) modal.style.display = "none";
-//         });
-//     }
-
-//     // Close modal if clicking outside the modal content
-//     window.addEventListener("click", function (e) {
-//         if (modal && e.target === modal) {
-//             modal.style.display = "none";
-//         }
-//     });
-// });
 
 
 </script>
